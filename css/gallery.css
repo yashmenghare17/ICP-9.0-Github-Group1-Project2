@@ -68,7 +68,7 @@ body{
 }
 .btn:hover{
     background-color: #001858;
-    color: #fef6e4;
+    color: #f582ae;
     transform: scale(1.1);
     box-shadow: 0px 0px 1px 3px #001858;
     transition: 0.3s;
@@ -125,12 +125,21 @@ body{
     }
     .toggle_switch{
         margin-top: 35px;
-        margin-left: 140px;
+        margin-left: 300px;
     }
     .toggle_btn{
         height: 45px;
         width: 45px;
     } 
+    .Banner{
+        position: relative;
+    }
+    .banner_text{
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        color: #001858;
+    }
 }
 /*Tablet devices*/
 @media screen and (min-width: 501px) and (max-width : 992px){
