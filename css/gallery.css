@@ -46,6 +46,14 @@ body{
     height: 100vh;
     width: 100%;
 }
+.Banner{
+    position: relative;
+}
+.banner_text{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
 
 /* Mobile Device */
 
