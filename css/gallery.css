@@ -82,6 +82,10 @@ body{
     color: #f582ae;
     transform: scale(1.1);
 }
+.footer-copyright-section{
+    text-align: center;
+}
+
 /* Mobile Device */
 
 @media screen and (max-width: 500px){
