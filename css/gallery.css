@@ -26,3 +26,11 @@ body{
     color: #001858;
     font-weight: bold;
 }
+.toggle_switch{
+    margin-top: 14px;
+    margin-left: 80px;
+}
+.toggle_btn{
+    height: 60px;
+    width: 60px;
+}
