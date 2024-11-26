@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    font-family: "Parkinsans", sans-serif;
 }
 .container{
     width: 100%;
@@ -11,13 +11,14 @@ body{
     display: none;
 }
 .navbar{
-    background-color: #fef6e4;
+    background-color: #001858;
     display: flex;
 }
 .logo{
     height: 60px;
     width: 60px;
     margin: 10px;
+    color: #fef6e4;
 }
 .menu_list{
     margin-left: 160px;
@@ -27,12 +28,12 @@ body{
     text-decoration: none;
     margin-right: 25px;
     font-size: 14px;
-    color: #001858;
+    color: #fef6e4;
     font-weight: bold;
     cursor: pointer;;
 }
 .menu_items:hover{
-    color: #8bd3dd;
+    color: #f582ae;
 }
 .toggle_switch{
     margin-top: 14px;
@@ -55,13 +56,18 @@ body{
     left: 40%;
 }
 .footer_section{
-    background-color: #fef6e4;
+    background-color: #001858;
     display: flex;
     padding: 40px 20px;
     margin-top: 80px;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+    color: #fef6e4;
+}
+.footer_text{
+    text-decoration: none;
+    color: #fef6e4;
 }
 
 /* Mobile Device */
@@ -75,15 +81,11 @@ body{
         width: 20px;
     }
     .navbar{
-        background-color: #fef6e4;
+        background-color: #001858;
         display: flex;
         width: auto;
     }
-    .logo{
-        height: 60px;
-        width: 60px;
-        margin-left: 200px;
-    }
+    
     .menu_list{
         display: none;
     }
@@ -102,13 +104,8 @@ body{
         display: none;
     }
     .navbar{
-        background-color: #fef6e4;
+        background-color: #001858;
         display: flex;
-    }
-    .logo{
-        height: 50px;
-        width: 50px;
-        margin: 10px;
     }
     .menu_list{
         margin-left: 20px;
@@ -118,7 +115,7 @@ body{
         text-decoration: none;
         margin-right: 10px;
         font-size: 10px;
-        color: #001858;
+        color: #fef6e4;
         font-weight: bold;
         cursor: pointer;;
     }
