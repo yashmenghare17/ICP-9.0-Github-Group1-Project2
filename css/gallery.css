@@ -69,7 +69,19 @@ body{
     text-decoration: none;
     color: #fef6e4;
 }
-
+.footer_text:hover{
+    color: #f582ae;
+}
+.Social{
+    color: #fef6e4;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.Social:hover{
+    color: #f582ae;
+    transform: scale(1.1);
+}
 /* Mobile Device */
 
 @media screen and (max-width: 500px){
