@@ -11,8 +11,8 @@
     <div class="content-section main header-content">
         <form id="contact-form">
             <div class="form-group form2">
-       <select id="select-department" class="form2">
-                <option>Select A Department :</option>
+       <select id="selectdepartment" class="form2 group">
+                <option class="group form2">Select A Department :</option>
                 <option>Marketing</option>
                 <option>customer Care</option>
                 <option>Association with GYM</option>
@@ -22,15 +22,23 @@
                 <option>Fitness Institue</option>
                 <option>General</option>
               </select><br/><br/>
-                <input type="text" placeholder="Enter Your name"  class="form2"/><br/><br/>
-                <input type="text" placeholder="Enter Your Phone Number"  class="form2" /><br/><br/>
-                <input type="text" placeholder="Enter Your Email-Id" class="form2"  /><br/><br/>
-                <input type="text" placeholder="Enter Your Pin code " class="form2"  /><br/><br/>
+              <div class="div">
+              <div class="form2">
+                <input type="text" placeholder="Name" id="name" name="message" class="message" >
+            </div><br>
+            <div class="form2">
+                <input type="text" placeholder="Email" id="email" name="message" class="message" >
+            </div><br>
+            <div class="form2">
+                <input type="text" placeholder="Phone" id="phone" name="message" class="message" >
+            </div><br>
             <div class="form2">
                 <p>Enter Message:</p>
                 <input type="text" id="message" name="message" class="message" >
             </div><br>
-            <select id="selectCity" class="form2">
+
+        </div>
+            <select id="selectstate" class="form2 group">
                 <option>Choose State :</option>
                 <option>Assam</option>
                 <option>Bihar</option>
@@ -44,8 +52,8 @@
                 <option>Telangana</option>
                 <option>Uttar Pradesh</option>
               </select><br/><br/>
-            <select id="selectCity" class="form2">
-                <option>Choose City :</option>
+            <select id="selectcity" class="form2 group">
+                <option >Choose City :</option>
                 <option>Rahuri</option>
                 <option>Nagar</option>
                 <option>Nashik</option>
@@ -58,7 +66,7 @@
                 <option>Rahata</option>
                 <option>Deolali</option>
               </select><br/><br/>
-              <button type="submit" class="button">Send Message</button>
+              <button type="submit" class="button group">Send Message</button>
         </form>
     </div>
     <iframe
@@ -70,6 +78,14 @@
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
+    <span>
+        <i class="text-align">GET IN TOUCH</i><br>
+
+        we are always ready to hear from you
+        our team is always ready to hear from you.
+        We make it a point to respond within 24 hours on 
+        weekdays and 48 hours weekends.
+    </span>
      <p>
         <b>
             Address:- Office No. 106,1st Floor of Adani Inspire BKC,
@@ -79,5 +95,20 @@
         Email:- customercare@gmail.com
         Phone Number:- +9876000000
      </p>
+     <script>
+        const form = document.getElementById('contact-form');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const selectcity= document.getElementById('selectcity').value;
+    const selectstate= document.getElementById('selectstate').value;
+    const selectdepartment= document.getElementById('selectdepartment').value;
+    console.log(`  SelectDepartment: ${selectdepartment} Name: ${name}, Email: ${email}, Message: ${message}  Phone: ${phone}  SelectCity: ${selectcity}  SelectState: ${selectstate}`);
+    // Add your form submission logic here
+});
+     </script>
 </body>
 </html>
