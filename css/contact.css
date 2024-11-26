@@ -9,6 +9,8 @@ body {
 .header {
     text-align: center;
     color: #001858;
+    font-size: 40px;
+    
 
 }
 .main {
@@ -53,6 +55,7 @@ body {
 }
 .text-align{
     text-align: center;
+    margin-top: 40px;
 }
 
 .form-group{
