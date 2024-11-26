@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-Us</title>
+    <link rel="stylesheet" href="./../css/contact.css">
 </head>
 <body>
-    <h1>Contact-Us</h1>
-    <div>
-        <form>
-            <select id="select-department">
+    <h1 class="header">Contact-Us</h1>
+    <div class="content-section main header-content">
+        <form id="contact-form">
+            <div class="form-group form2">
+       <select id="select-department" class="form2">
                 <option>Select A Department :</option>
                 <option>Marketing</option>
                 <option>customer Care</option>
@@ -20,23 +22,15 @@
                 <option>Fitness Institue</option>
                 <option>General</option>
               </select><br/><br/>
-            <div>
-                <p>Name:</p>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-                <p>Email:</p>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-                <p>Phone:</p>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
+                <input type="text" placeholder="Enter Your name"  class="form2"/><br/><br/>
+                <input type="text" placeholder="Enter Your Phone Number"  class="form2" /><br/><br/>
+                <input type="text" placeholder="Enter Your Email-Id" class="form2"  /><br/><br/>
+                <input type="text" placeholder="Enter Your Pin code " class="form2"  /><br/><br/>
+            <div class="form2">
                 <p>Enter Message:</p>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="message" name="message" class="message" >
             </div><br>
-            <select id="selectCity">
+            <select id="selectCity" class="form2">
                 <option>Choose State :</option>
                 <option>Assam</option>
                 <option>Bihar</option>
@@ -50,7 +44,7 @@
                 <option>Telangana</option>
                 <option>Uttar Pradesh</option>
               </select><br/><br/>
-            <select id="selectCity">
+            <select id="selectCity" class="form2">
                 <option>Choose City :</option>
                 <option>Rahuri</option>
                 <option>Nagar</option>
@@ -64,7 +58,26 @@
                 <option>Rahata</option>
                 <option>Deolali</option>
               </select><br/><br/>
+              <button type="submit" class="button">Send Message</button>
         </form>
     </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.03900799053!2d72.88118615!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1732609219949!5m2!1sen!2sin" 
+      width="400"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+     <p>
+        <b>
+            Address:- Office No. 106,1st Floor of Adani Inspire BKC,
+            Bandra East,
+            Mumbai,Mahsradhtra 400051
+        </b><br/>
+        Email:- customercare@gmail.com
+        Phone Number:- +9876000000
+     </p>
 </body>
 </html>
