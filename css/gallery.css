@@ -42,6 +42,10 @@ body{
     height: 60px;
     width: 60px;
 }
+.banner_img{
+    height: 100vh;
+    width: 100%;
+}
 
 /* Mobile Device */
 
