@@ -54,6 +54,15 @@ body{
     top: 45%;
     left: 40%;
 }
+.footer_section{
+    background-color: #fef6e4;
+    display: flex;
+    padding: 40px 20px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
 
 /* Mobile Device */
 
