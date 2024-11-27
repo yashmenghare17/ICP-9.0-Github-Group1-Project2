@@ -71,8 +71,8 @@
 }
 .submit-btn
 {
-    background-color:#f582ae;
-    color: #001858;
+    background-color:#001858;
+    color: #fff;
     padding: 10px;
     border-radius: 20px;
     cursor: pointer;
@@ -117,11 +117,25 @@
     height: 30px;
     cursor: pointer;
 }
-.dialog-paragraph
+.model-heading
 {
     font-size: 20px;
+    color:#172c66 ;
+}
+.dialog-paragraph
+{
+    font-size: 10px;
     color: #172c66;
 }
+.ok-btn
+{
+    background-color: #172c66 ;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
 
 
 
