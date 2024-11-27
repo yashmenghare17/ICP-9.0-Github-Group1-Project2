@@ -158,3 +158,18 @@
 
 
 }
+
+
+
+
+/*Tablet device*/
+@media screen and (min-width: 501px) and (max-width : 992px)
+{
+    .curosal_img
+    {
+        width: 973px;
+        height: 630px;
+    }
+    
+
+}
