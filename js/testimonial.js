@@ -95,6 +95,44 @@ slider.addEventListener(
 nextBtn.addEventListener("click", showNextTestimonial);
 prevBtn.addEventListener("click", showPrevTestimonial);
 
+// Load testimonials from localStorage
+const loadTestimonials = () => {
+  const storedTestimonials = JSON.parse(localStorage.getItem("testimonials"));
+  if (storedTestimonials) {
+    Testimonials.push(...storedTestimonials);
+  }
+};
+
+// Save a new testimonial to localStorage
+const saveTestimonial = (testimonial) => {
+  const storedTestimonials =
+    JSON.parse(localStorage.getItem("testimonials")) || [];
+  storedTestimonials.push(testimonial);
+  localStorage.setItem("testimonials", JSON.stringify(storedTestimonials));
+};
+
+// Handle form submission for new testimonials
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const image = document.getElementById("image").value;
+  const quote = document.getElementById("quote").value;
+
+  const newTestimonial = {
+    name: `- ${name}`,
+    image: image,
+    quote: `"${quote}"`,
+  };
+
+  Testimonials.push(newTestimonial);
+  saveTestimonial(newTestimonial);
+
+  displayTestimonial();
+  createDots();
+  form.reset();
+});
+
 // Initial setup
 loadTestimonials();
 displayTestimonial();
