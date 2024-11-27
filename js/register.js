@@ -27,3 +27,10 @@ const images = ["./../img/register-curosal-img1.jpg","./../img/register-curosal-
   }
   setInterval(next, 2000);
 
+  function openModel()
+  {
+      const overlayElement = document.getElementById('overlay');
+      overlayElement.style.display = 'flex';
+  
+  }
+  
