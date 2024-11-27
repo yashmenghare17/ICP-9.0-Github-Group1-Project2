@@ -102,7 +102,7 @@
 }
 .model
 {
-    background-color: #fef6e4;
+    background-color: #fff;
     padding: 20px 30px;
     border-radius: 10px;
     position: relative;
@@ -121,10 +121,11 @@
 {
     font-size: 20px;
     color:#172c66 ;
+    margin-left: 140px;
 }
 .dialog-paragraph
 {
-    font-size: 10px;
+    font-size: 15px;
     color: #172c66;
 }
 .ok-btn
@@ -134,6 +135,7 @@
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 15px;
+    margin-left: 150px;
 }
 
 
