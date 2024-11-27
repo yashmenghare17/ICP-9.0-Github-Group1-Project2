@@ -1,0 +1,31 @@
+.curosal_img
+{
+    width: 1518px;
+    height: 630px;
+}
+.cuorsal
+{
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.next_cuorsal
+{
+    right: 0;
+}
+.next_cuorsal:hover
+{
+    
+    transform: scale(0.8) translateX(10px);
+}
+.prev_cuorsal
+{
+    left: 0;
+}
+.prev_cuorsal:hover
+{
+    transform: scale(0.8) translateX(-10px);
+}
