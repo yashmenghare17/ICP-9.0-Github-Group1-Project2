@@ -25,4 +25,5 @@ const images = ["./../img/register-curosal-img1.jpg","./../img/register-curosal-
        }
           slide.src = images[index]
   }
-  
+  setInterval(next, 2000);
+
