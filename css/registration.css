@@ -82,7 +82,7 @@
 }
 .submit-btn:hover
 {
-    background-color: #f3d2c1;
+    background-color: #829ce3;
 }
 
 
@@ -136,6 +136,10 @@
     border-radius: 10px;
     font-size: 15px;
     margin-left: 150px;
+}
+.ok-btn:hover
+{
+    background-color: #829ce3;
 }
 
 
