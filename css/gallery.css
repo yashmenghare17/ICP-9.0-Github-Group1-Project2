@@ -81,12 +81,22 @@ body{
     margin-left: 180px;
     padding: 20px;
     display: block;
+    flex-wrap: wrap;
 }
 .gallery_box{
     height: 300px;
     width: 350px;
+    cursor: pointer;
 }
-
+.gallery_box:hover{
+    transform: scale(0.9);
+}
+.gallery_text{
+    text-align: center;
+    font-size: 40px;
+    color: #001858;
+    font-weight: bold;
+}
 /*footer section started*/
 .footer_section{
     background-color: #001858;
