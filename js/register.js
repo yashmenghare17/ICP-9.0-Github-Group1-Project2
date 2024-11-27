@@ -13,3 +13,16 @@ const images = ["./../img/register-curosal-img1.jpg","./../img/register-curosal-
     }
        slide.src = images[index]
   }
+  function prev()
+  {
+      if(index > 0){
+  
+      
+          index--;
+       }
+       else{
+           index = images.length -1;
+       }
+          slide.src = images[index]
+  }
+  
