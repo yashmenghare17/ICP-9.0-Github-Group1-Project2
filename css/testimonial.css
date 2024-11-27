@@ -81,6 +81,27 @@ body {
   right: 300px;
 }
 
+/* Dots Navigation */
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #001858;
+}
+
 /* Call to Action Button */
 .cta-button {
   background-color: #ff6347;
@@ -95,4 +116,36 @@ body {
 
 .cta-button:hover {
   background-color: #ff4500;
+}
+
+/* Testimonial Form Styles */
+.testimonial-form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #001858;
+  border-radius: 10px;
+  width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-form-container h2 {
+  color: #fef6e4;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+#testimonial-form input,
+#testimonial-form textarea {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#testimonial-form button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
 }
