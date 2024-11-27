@@ -33,4 +33,9 @@ const images = ["./../img/register-curosal-img1.jpg","./../img/register-curosal-
       overlayElement.style.display = 'flex';
   
   }
-  
+
+  function closeModel()
+{
+    const overlayElement = document.getElementById('overlay');
+    overlayElement.style.display = 'none';
+}
