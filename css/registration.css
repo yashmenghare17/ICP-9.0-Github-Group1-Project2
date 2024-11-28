@@ -1,29 +1,30 @@
 
 
 /*register from */
-.parent-container
+.register-from-container
 {
-    background-color: #f3d2c1;
-    height: 600px;
-    width: 400px;
-    padding:10px ;
-   margin-left: 550px;
-   margin-top: 100px;
+    background-color: #001858;
+    margin: 20px auto;
+   
+    width: 450px;
+    padding:20px ;
+  
+   border-radius: 10px;
 }
 .page-heading
 {
     font-size: 30px;
     text-align: center;
-    color: #001858;
+    color: #fef6e4;
 }
 .paragraph
 {
     text-align: center;
-    color: #172c66;
+    color: #fef6e4;
 }
 .from-container
 {
-    background-color: #f3d2c1;
+    background-color: #001858;
     padding: 20px;
     margin: 10px auto;
     
@@ -34,24 +35,38 @@
 {
    
     margin: 5px;
-    width: 300px;
-    height: 30px;
+    width: 325px;
     border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 25px;
+}
+select
+{
+    margin: 5px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 25px;
 }
 .submit-btn
 {
-    background-color:#001858;
-    color: #fff;
+   
+    background-color: #ff6347;
+    color: #fef6e4;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
+    margin-left: 37px;
     
     
     
 }
 .submit-btn:hover
 {
-    background-color: #829ce3;
+    background-color:#ff4500;
 }
 
 
@@ -78,14 +93,7 @@
    
     
 }
-.close-icon
-{
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    height: 30px;
-    cursor: pointer;
-}
+
 .model-heading
 {
     font-size: 20px;
@@ -99,7 +107,7 @@
 }
 .ok-btn
 {
-    background-color: #172c66 ;
+    background-color:  #ff6347 ;
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
@@ -108,7 +116,7 @@
 }
 .ok-btn:hover
 {
-    background-color: #829ce3;
+    background-color: #ff4500;
 }
 
 
