@@ -43,3 +43,13 @@
     border-radius: 10px;
     padding: 10px 5px;
 }
+
+.submit-btn{
+    width: 500px;
+    border-radius: 20px;
+    height: 45px;
+    font-size: 18px;
+    background-color: #0733ae;
+    color: white;
+    border: 1px solid #577de8;
+}
