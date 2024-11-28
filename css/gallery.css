@@ -128,9 +128,11 @@ body{
     height: 350px;
     width: 700px;
     margin-top: 30px;
-    box-shadow: 0px 0px 5px 5px ;
 }
-
+.modelbox_text{
+    text-align: center;
+    color: #001858;
+}
 
 /* Mobile Device */
 
