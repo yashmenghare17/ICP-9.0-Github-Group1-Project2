@@ -3,3 +3,17 @@
     padding: 0;
     font-family: "Parkinsans", sans-serif;
 }
+
+.trial-img{
+    height: 400px;
+    width: 1519px;
+}
+
+.trial-text{
+    color: rgb(6, 6, 143);
+    font-size: 30px;
+    text-align: center;
+    margin-top: -300px;
+    margin-bottom: 300px;
+    width: 500px;
+}
