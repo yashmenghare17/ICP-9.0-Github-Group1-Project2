@@ -51,8 +51,5 @@ const dialogData = {
     overlayElement.style.display = "flex";
   }
   
-  function closeOverlay() {
-    const overlayElement = document.getElementById("overlay");
-    overlayElement.style.display = "none";
-  }
+  
   
