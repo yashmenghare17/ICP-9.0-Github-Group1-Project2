@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IronPlus Gym - Gallery</title>
   <link href="./../css/gallery.css" rel="stylesheet" />
+  <link href="./../css/home.css" rel="stylesheet"/>
+  <link href="./../css/style.css" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -34,17 +36,23 @@
         <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
       </div>
     </div>
-    <!--Banner-->
-    <div class="Banner">
-      <span>
-        <img src="./../img/Website_banner.webp" class="banner_img" />
-      </span>
-      <div class="banner_text">
-        <h1 class="banner_heading">Welcome to our GYM</h1>
-        <p class="banner_subtext">Transform Your Body, Transform Your Life</p>
-        <button class="btn">Join Now</button>
-      </div>
-    </div>
+
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+      <!-- Curosal Start -->
+       <div class="main-curosal">
+          <div class="curosal_img" id="curosal_img">
+              <img src="./../img/home-curosal-img1.jpg"  alt="home-curosal-img1" />
+          </div>
+          <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./../img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
+          <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./../img/home-curosal-next.png"  alt="homecurosalnext" /></div>
+       </div>
+        <!-- Curosal End -->
+  </div>
+<!-- Wrapper End -->
+<!-- Footer Start  -->
+
+   
     <div class="gallery_container">
       <span>
         <p class="gallery_text">Our Gallery</p>
@@ -60,8 +68,16 @@
        <img src="./../img/gallery_img_9.webp" class="gallery_box" alt="gallery_img_9"/>
        <img src="./../img/gallery_img_10.webp" class="gallery_box" alt="gallery_img_10"/>
        <img src="./../img/gallery_img_11.webp" class="gallery_box" alt="gallery_img_11"/>
-       <img src="./../img/gallery_img_12.webp" class="gallery_box" alt="gallery_img_12"/>
-       
+       <img src="./../img/gallery_img_12.webp" class="gallery_box" alt="gallery_img_12"/> 
+    </div>
+
+    <div class="overlay" id="overlay">
+         <div class="model">
+          <img src="./Images/close.png" class="close" onclick="closeoverlay()"/>
+          <div>
+            
+          </div>
+         </div>
     </div>
   </div>
   <!--Footer-->
