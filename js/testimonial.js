@@ -2,24 +2,26 @@ const Testimonials = [
   {
     image: "../img/man.png",
     quote:
-      '"This gym completely changed my life! Amazing trainers and great environment."',
-    name: "- John Doe",
+      '"ThisThis gym is amazing. Amazing facility, top equipment and great environment."',
+    name: "- Rajesh Kumar",
   },
   {
     image: "../img/woman.png",
-    quote: '"I’ve never felt stronger! The community here is incredible."',
-    name: "- Jane Smith",
+    quote:
+      '"Good service with friendly staff and super clean and comfortable gym for everyone from beginners to professional athletes to train at."',
+    name: "- Priya Sharma",
   },
   {
     image: "../img/boy.png",
     quote:
-      '"The classes are fun and challenging. I look forward to coming every day!"',
-    name: "- Mike Johnson",
+      '"The gym environment is so nice. The trainers will guide us very well if we approach them"',
+    name: "- Arjun Mehta",
   },
   {
     image: "../img/girl.png",
-    quote: '"A welcoming place for everyone. I found my second home here."',
-    name: "- Emily Davis",
+    quote:
+      '"Very neatly maintained gym. Great place to workout with flexible timings. Had helpful trainers and excellent equipment"',
+    name: "- Sneha Patel",
   },
 ];
 
