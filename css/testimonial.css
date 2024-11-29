@@ -82,27 +82,6 @@ body {
   right: 300px;
 }
 
-/* Dots Navigation */
-.dots-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  background-color: #ddd;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.dot.active {
-  background-color: #001858;
-}
-
 /* Call to Action Button */
 .cta-button {
   background-color: #ff6347;

@@ -36,32 +36,6 @@ const popup = document.getElementById("submission-popup");
 // State Variables
 let i = 0;
 
-// Create dots for testimonials
-const createDots = () => {
-  dotsContainer.innerHTML = "";
-  Testimonials.forEach((_, index) => {
-    const dot = document.createElement("span");
-    dot.classList.add("dot");
-    if (index === 0) dot.classList.add("active");
-    dot.setAttribute("data-index", index);
-    dotsContainer.appendChild(dot);
-
-    // Dot click event
-    dot.addEventListener("click", () => {
-      i = index;
-      displayTestimonial();
-      updateDots();
-    });
-  });
-};
-
-// Update dots based on current testimonial index
-const updateDots = () => {
-  const dots = document.querySelectorAll(".dot");
-  dots.forEach((dot, index) => {
-    dot.classList.toggle("active", index === i);
-  });
-};
 
 // Display the current testimonial
 const displayTestimonial = () => {
