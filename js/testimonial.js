@@ -2,7 +2,7 @@ const Testimonials = [
   {
     image: "../img/man.png",
     quote:
-      '"ThisThis gym is amazing. Amazing facility, top equipment and great environment."',
+      '"This gym is amazing. Amazing facility, top equipment and great environment."',
     name: "- Rajesh Kumar",
   },
   {
@@ -14,20 +14,19 @@ const Testimonials = [
   {
     image: "../img/boy.png",
     quote:
-      '"The gym environment is so nice. The trainers will guide us very well if we approach them"',
+      '"The gym environment is so nice. The trainers will guide us very well if we approach them."',
     name: "- Arjun Mehta",
   },
   {
     image: "../img/girl.png",
     quote:
-      '"Very neatly maintained gym. Great place to workout with flexible timings. Had helpful trainers and excellent equipment"',
+      '"Very neatly maintained gym. Great place to workout with flexible timings. Had helpful trainers and excellent equipment."',
     name: "- Sneha Patel",
   },
 ];
 
 // DOM Elements
 const slider = document.getElementById("slider");
-const dotsContainer = document.getElementById("dots-container");
 const prevBtn = document.getElementById("left-arrow");
 const nextBtn = document.getElementById("right-arrow");
 const form = document.getElementById("testimonial-form");
@@ -35,7 +34,6 @@ const popup = document.getElementById("submission-popup");
 
 // State Variables
 let i = 0;
-
 
 // Display the current testimonial
 const displayTestimonial = () => {
@@ -50,13 +48,11 @@ const displayTestimonial = () => {
 const showNextTestimonial = () => {
   i = (i + 1) % Testimonials.length;
   displayTestimonial();
-  updateDots();
 };
 
 const showPrevTestimonial = () => {
   i = (i - 1 + Testimonials.length) % Testimonials.length;
   displayTestimonial();
-  updateDots();
 };
 
 // Auto-scroll functionality
@@ -103,13 +99,23 @@ form.addEventListener("submit", (event) => {
 
   Testimonials.push(newTestimonial);
   saveTestimonial(newTestimonial);
-
   displayTestimonial();
-  createDots();
   form.reset();
+  openModal();
 });
+
+// Display the popup
+function openModal() {
+  const overlayElement = document.getElementById("overlay");
+  overlayElement.style.display = "flex";
+  setTimeout(closeModal, 2000);
+}
+
+function closeModal() {
+  const overlayElement = document.getElementById("overlay");
+  overlayElement.style.display = "none";
+}
 
 // Initial setup
 loadTestimonials();
 displayTestimonial();
-createDots();

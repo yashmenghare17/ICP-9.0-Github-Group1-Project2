@@ -49,7 +49,6 @@ body{
 .banner_img{
     height: 100vh;
     width: 100%;
-    object-fit: contain;
 }
 .btn{
     height: 40px;
