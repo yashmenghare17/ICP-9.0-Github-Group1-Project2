@@ -21,13 +21,13 @@
         </div>
         <div class="menu_list">
             <a href="../index.html" class="menu_items">Home</a>
-            <a href="#" class="menu_items">Gallery</a>
-            <a href="#" class="menu_items">GYM Package</a>
+            <a href="../pages/gallery.html" class="menu_items">Gallery</a>
+            <a href="../pages/package.html" class="menu_items">GYM Package</a>
             <a href="#" class="menu_items">BIM Calculator</a>
             <a href="../pages/testimonial.html" class="menu_items">Testimonial</a>
             <a href="#" class="menu_items">Careers</a>
             <a href="#" class="menu_items">About Us</a>
-            <a href="#" class="menu_items">Registration</a>
+            <a href="../pages/registration.html" class="menu_items">Registration</a>
             <a href="#" class="menu_items">Contact</a>
         </div>
         <div class="toggle_switch">
@@ -67,10 +67,8 @@
             <div class="slider" id="slider"></div>
             <div class="dots-container" id="dots-container"></div>
             <img src="../img/right-arrow.png" alt="Right Arrow" class="right-arrow" id="right-arrow" />
+            <button class="cta-button">Join Us Now</button>
         </div>
-
-        <!-- Call to Action Button -->
-        <button class="cta-button">Join Us Now</button>
 
         <!-- Testimonial Form Section -->
         <div class="testimonial-form-container" id="testimonial-form-container">
@@ -81,7 +79,17 @@
                 <textarea id="quote" placeholder="Your Testimonial" required></textarea>
                 <button type="submit" class="cta-button">Submit</button>
             </form>
+
+            <!-- Popup Modal Section -->
+            <div class="overlay" id="overlay">
+                <div class="modal">
+                    <img src="../img/close.png" alt="close-icon" class="close-icon" onclick="closeModal()" />
+                    <h2>Thank you for sharing your experience.</h2>
+                </div>
+            </div>
         </div>
+
+
     </div>
 
     <!-- Footer Start  -->
@@ -93,14 +101,14 @@
                     <li><a href="../index.html" class="footer_text">Home</a></li>
                     <li><a href="" class="footer_text">About Us</a></li>
                     <li><a href="" class="footer_text">Contact</a></li>
-                    <li><a href="" class="footer_text">Register</a></li>
+                    <li><a href="../pages/registration.html" class="footer_text">Register</a></li>
                 </ul>
             </div>
             <div class="footer-nav-links">
                 <h3>Important Links</h3>
                 <ul>
-                    <li><a href="" class="footer_text">Gallery</a></li>
-                    <li><a href="" class="footer_text">Gym Package</a></li>
+                    <li><a href="../pages/gallery.html" class="footer_text">Gallery</a></li>
+                    <li><a href="../pages/package.html" class="footer_text">Gym Package</a></li>
                     <li><a href="" class="footer_text">BIM Calculator</a></li>
                     <li><a href="../pages/testimonial.html" class="footer_text">Testimonial</a></li>
                     <li><a href="" class="footer_text">Careers</a></li>

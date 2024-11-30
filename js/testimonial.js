@@ -2,30 +2,31 @@ const Testimonials = [
   {
     image: "../img/man.png",
     quote:
-      '"This gym completely changed my life! Amazing trainers and great environment."',
-    name: "- John Doe",
+      '"This gym is amazing. Amazing facility, top equipment and great environment."',
+    name: "- Rajesh Kumar",
   },
   {
     image: "../img/woman.png",
-    quote: '"I’ve never felt stronger! The community here is incredible."',
-    name: "- Jane Smith",
+    quote:
+      '"Good service with friendly staff and super clean and comfortable gym for everyone from beginners to professional athletes to train at."',
+    name: "- Priya Sharma",
   },
   {
     image: "../img/boy.png",
     quote:
-      '"The classes are fun and challenging. I look forward to coming every day!"',
-    name: "- Mike Johnson",
+      '"The gym environment is so nice. The trainers will guide us very well if we approach them."',
+    name: "- Arjun Mehta",
   },
   {
     image: "../img/girl.png",
-    quote: '"A welcoming place for everyone. I found my second home here."',
-    name: "- Emily Davis",
+    quote:
+      '"Very neatly maintained gym. Great place to workout with flexible timings. Had helpful trainers and excellent equipment."',
+    name: "- Sneha Patel",
   },
 ];
 
 // DOM Elements
 const slider = document.getElementById("slider");
-const dotsContainer = document.getElementById("dots-container");
 const prevBtn = document.getElementById("left-arrow");
 const nextBtn = document.getElementById("right-arrow");
 const form = document.getElementById("testimonial-form");
@@ -33,33 +34,6 @@ const popup = document.getElementById("submission-popup");
 
 // State Variables
 let i = 0;
-
-// Create dots for testimonials
-const createDots = () => {
-  dotsContainer.innerHTML = "";
-  Testimonials.forEach((_, index) => {
-    const dot = document.createElement("span");
-    dot.classList.add("dot");
-    if (index === 0) dot.classList.add("active");
-    dot.setAttribute("data-index", index);
-    dotsContainer.appendChild(dot);
-
-    // Dot click event
-    dot.addEventListener("click", () => {
-      i = index;
-      displayTestimonial();
-      updateDots();
-    });
-  });
-};
-
-// Update dots based on current testimonial index
-const updateDots = () => {
-  const dots = document.querySelectorAll(".dot");
-  dots.forEach((dot, index) => {
-    dot.classList.toggle("active", index === i);
-  });
-};
 
 // Display the current testimonial
 const displayTestimonial = () => {
@@ -74,13 +48,11 @@ const displayTestimonial = () => {
 const showNextTestimonial = () => {
   i = (i + 1) % Testimonials.length;
   displayTestimonial();
-  updateDots();
 };
 
 const showPrevTestimonial = () => {
   i = (i - 1 + Testimonials.length) % Testimonials.length;
   displayTestimonial();
-  updateDots();
 };
 
 // Auto-scroll functionality
@@ -127,13 +99,23 @@ form.addEventListener("submit", (event) => {
 
   Testimonials.push(newTestimonial);
   saveTestimonial(newTestimonial);
-
   displayTestimonial();
-  createDots();
   form.reset();
+  openModal();
 });
+
+// Display the popup
+function openModal() {
+  const overlayElement = document.getElementById("overlay");
+  overlayElement.style.display = "flex";
+  setTimeout(closeModal, 2000);
+}
+
+function closeModal() {
+  const overlayElement = document.getElementById("overlay");
+  overlayElement.style.display = "none";
+}
 
 // Initial setup
 loadTestimonials();
 displayTestimonial();
-createDots();

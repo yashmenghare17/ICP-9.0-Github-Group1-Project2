@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 
-/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -35,7 +34,7 @@ body {
 
 .slider {
   font-family: "Parkinsans", sans-serif;
-  height: 200px;
+  height: 220px;
   width: 600px;
   background-color: #001858;
   color: #fef6e4;
@@ -49,7 +48,9 @@ body {
 }
 
 .slider .quote {
-  width: 480px;
+  width: 540px;
+  height: 70px;
+  font-size: 17px;
   display: block;
   margin: auto;
   margin-top: 80px;
@@ -81,28 +82,7 @@ body {
   right: 300px;
 }
 
-/* Dots Navigation */
-.dots-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  background-color: #ddd;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.dot.active {
-  background-color: #001858;
-}
-
-/* Call to Action Button */
+/* cta Button */
 .cta-button {
   background-color: #ff6347;
   color: #fef6e4;
@@ -149,4 +129,43 @@ body {
   display: block;
   width: 100%;
   margin-top: 20px;
+}
+
+/* Popup Styles */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #001858;
+  color: #ccc;
+  height: 100px;
+  width: 280px;
+  display: block;
+  margin: 200px auto;
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.close-icon {
+  position: absolute;
+  height: 20px;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-icon:hover {
+  height: 19px;
+  transform: scale(1.2);
 }
