@@ -92,7 +92,7 @@ form.addEventListener("submit", (event) => {
   const quote = document.getElementById("quote").value;
 
   const newTestimonial = {
-    name: `- ${name}`,
+    name: `- ${name.toUpperCase()}`,
     image: image,
     quote: `"${quote}"`,
   };
