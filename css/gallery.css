@@ -18,7 +18,7 @@ body{
     height: 60px;
     width: 60px;
     margin: 10px;
-    color: #fef6e4;
+    border-radius: 50%;
 }
 .menu_list{
     margin-left: 160px;
@@ -34,6 +34,14 @@ body{
 }
 .menu_items:hover{
     color: #f582ae;
+}
+.toggle_switch{
+    margin-top: 14px;
+    margin-left: 80px;
+}
+.toggle_btn{
+    height: 60px;
+    width: 60px;
 }
 /*navbar ended here*/
 
@@ -146,6 +154,14 @@ body{
     .menu_list{
         display: none;
     }
+    .toggle_switch{
+        margin-top: 35px;
+        margin-left: 300px;
+    }
+    .toggle_btn{
+        height: 45px;
+        width: 45px;
+    } 
     
     /*background_img*/
     .Banner{
@@ -157,6 +173,29 @@ body{
         left: 20%;
         color: #001858;
     }
+    /*gallery box*/
+.gallery_container{
+    width: 70%;
+    margin-left: 50px;
+    padding: 20px;
+    display: block;
+    flex-wrap: wrap;
+}
+.gallery_box{
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.gallery_box:hover{
+    transform: scale(0.9);
+}
+.gallery_text{
+    text-align: center;
+    font-size: 40px;
+    color: #001858;
+    font-weight: bold;
+}
 }
 /*Tablet devices*/
 @media screen and (min-width: 501px) and (max-width : 992px){
@@ -182,5 +221,13 @@ body{
     }
     .menu_items:hover{
         color: #8bd3dd;
+    }
+    .toggle_switch{
+        margin-top: 28px;
+        margin-left: 10px;
+    }
+    .toggle_btn{
+        height: 40px;
+        width: 40px;
     }
 }
