@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="./../css/contact.css">
+</head>
+<body>
+    <h1 class="header">Contact-Us</h1>
+    <div class="content-section main header-content">
+        <form id="contact-form">
+            <div class="form-group form2">
+       <select id="selectdepartment" class="form2 group">
+                <option class="group form2">Select A Department :</option>
+                <option>Marketing</option>
+                <option>customer Care</option>
+                <option>Association with GYM</option>
+                <option>HR</option>
+                <option>Job Application</option>
+                <option>IT</option>
+                <option>Fitness Institue</option>
+                <option>General</option>
+              </select><br/><br/>
+              <div class="div">
+              <div class="form2">
+                <input type="text" placeholder="Name" id="name" name="message" class="message" >
+            </div><br>
+            <div class="form2">
+                <input type="text" placeholder="Email" id="email" name="message" class="message" >
+            </div><br>
+            <div class="form2">
+                <input type="text" placeholder="Phone" id="phone" name="message" class="message" >
+            </div><br>
+            <div class="form2">
+                <p>Enter Message:</p>
+                <input type="text" id="message" name="message" class="message" >
+            </div><br>
+
+        </div>
+            <select id="selectstate" class="form2 group">
+                <option>Choose State :</option>
+                <option>Assam</option>
+                <option>Bihar</option>
+                <option>Delhi</option>
+                <option>Gujarat</option>
+                <option>Haryana</option>
+                <option>Karnataka</option>
+                <option>Kerla</option>
+                <option>Maharashtra</option>
+                <option>Tamil Nadu</option>
+                <option>Telangana</option>
+                <option>Uttar Pradesh</option>
+              </select><br/><br/>
+            <select id="selectcity" class="form2 group">
+                <option >Choose City :</option>
+                <option>Rahuri</option>
+                <option>Nagar</option>
+                <option>Nashik</option>
+                <option>Kholar</option>
+                <option>Pune</option>
+                <option>Thane</option>
+                <option>Sangmaner</option>
+                <option>Loni</option>
+                <option>Shirdi</option>
+                <option>Rahata</option>
+                <option>Deolali</option>
+              </select><br/><br/>
+              <button type="submit" class="button group">Send Message</button>
+        </form>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.03900799053!2d72.88118615!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1732609219949!5m2!1sen!2sin" 
+      width="400"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <span class="text-align">
+        <i class="text-align">GET IN TOUCH</i><br>
+
+        we are always ready to hear from you<br>
+        our team is always ready to hear from you.<br>
+        We make it a point to respond within 24 hours on <br>
+        weekdays and 48 hours weekends.<br>
+    </span>
+     <p>
+        <b>
+            Address:- Office No. 106,1st Floor of Adani Inspire BKC,
+            Bandra East,
+            Mumbai,Mahsradhtra 400051
+        </b><br/>
+        Email:- customercare@gmail.com
+        Phone Number:- +9876000000
+     </p>
+     
+     <script>
+        const form = document.getElementById('contact-form');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const selectcity= document.getElementById('selectcity').value;
+    const selectstate= document.getElementById('selectstate').value;
+    const selectdepartment= document.getElementById('selectdepartment').value;
+    console.log(`  SelectDepartment: ${selectdepartment} Name: ${name}, Email: ${email}, Message: ${message}  Phone: ${phone}  SelectCity: ${selectcity}  SelectState: ${selectstate}`);
+
+});
+     </script>
+
+     
+</body>
+</html>
