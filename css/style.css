@@ -14,15 +14,20 @@ body{
     background-color: #001858;
     display: flex;
 }
+.logo_img{
+    width: 30%;
+}
 .logo{
     height: 60px;
     width: 60px;
     margin: 10px;
-    color: #fef6e4;
+    border-radius: 50%;
 }
 .menu_list{
-    margin-left: 160px;
-    margin-top: 28px;
+    width: 65%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 .menu_items{
     text-decoration: none;
@@ -33,12 +38,24 @@ body{
     cursor: pointer;;
 }
 .menu_items:hover{
-    color: #f582ae;
+    color:black;
+    background-color: white;
+    padding:10px 10px;
+    border-radius: 20px; 
+}
+.active{
+    color:black;
+    background-color: white;
+    padding:10px 10px;
+    border-radius: 20px; 
 }
 .toggle_switch{
-    margin-top: 14px;
-    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
 }
+
 .toggle_btn{
     height: 60px;
     width: 60px;
@@ -98,6 +115,10 @@ body{
 }
 .footer-copyright-section{
     text-align: center;
+}
+.footer-nav-links ul li {
+    margin-bottom: 10px;
+    margin-left: -22px;
 }
 
 /* Mobile Device */
