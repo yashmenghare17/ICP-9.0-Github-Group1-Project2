@@ -108,6 +108,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .model{
     background-color: #fef6e4;

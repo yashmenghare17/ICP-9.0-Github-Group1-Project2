@@ -59,15 +59,12 @@ const dialogData = {
     description: "Whether you're a beginner or a pro, our gym's cardio zone offers equipment suited for every fitness level.",
     imgSrc: "./../img/gallery_img_12.webp",
   },
-  // Add similar objects for all remaining images
 };
 
 function openoverlay(imageId) {
   const overlayElement = document.getElementById("overlay");
   const modelBoxText = document.getElementById("modelbox_text");
   const modelImage = document.getElementById("model_img");
-
-  // Update dialog content dynamically
   if (dialogData[imageId]) {
     modelBoxText.innerHTML = `
       <h2>${dialogData[imageId].title}</h2>
@@ -75,11 +72,8 @@ function openoverlay(imageId) {
     `;
     modelImage.src = dialogData[imageId].imgSrc;
   }
-
-  // Display the overlay
   overlayElement.style.display = "flex";
 }
-
 function closeoverlay() {
   const overlayElement = document.getElementById("overlay");
   overlayElement.style.display = "none";
