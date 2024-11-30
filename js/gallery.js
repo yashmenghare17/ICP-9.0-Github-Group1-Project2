@@ -24,6 +24,41 @@ const dialogData = {
     description: "Join our lively group fitness classes and experience the power of community workouts. From yoga to high-energy Zumba, we have something for everyone!",
     imgSrc: "./../img/gallery_img_5.webp",
   },
+  6: {
+    title: "Group Fitness Classes",
+    description: "Join our lively group fitness classes and experience the power of community workouts. From yoga to high-energy Zumba, we have something for everyone!",
+    imgSrc: "./../img/gallery_img_6.webp",
+  },
+  7: {
+    title: "Group Fitness Classes",
+    description: "Join our lively group fitness classes and experience the power of community workouts. From yoga to high-energy Zumba, we have something for everyone!",
+    imgSrc: "./../img/gallery_img_7.webp",
+  },
+  8: {
+    title: "Group Fitness Classes",
+    description: "Join our lively group fitness classes and experience the power of community workouts. From yoga to high-energy Zumba, we have something for everyone!",
+    imgSrc: "./../img/gallery_img_8.webp",
+  },
+  9: {
+    title: "Group Fitness Classes",
+    description: "Join our lively group fitness classes and experience the power of community workouts. From yoga to high-energy Zumba, we have something for everyone!",
+    imgSrc: "./../img/gallery_img_9.webp",
+  },
+  10: {
+    title: "Group Fitness Classes",
+    description: "Join our lively group fitness classes and experience the power of community workouts. From yoga to high-energy Zumba, we have something for everyone!",
+    imgSrc: "./../img/gallery_img_10.webp",
+  },
+  11: {
+    title: "Group Fitness Classes",
+    description: "Join our lively group fitness classes and experience the power of community workouts. From yoga to high-energy Zumba, we have something for everyone!",
+    imgSrc: "./../img/gallery_img_11.webp",
+  },
+  12: {
+    title: "Group Fitness Classes",
+    description: "Join our lively group fitness classes and experience the power of community workouts. From yoga to high-energy Zumba, we have something for everyone!",
+    imgSrc: "./../img/gallery_img_12.webp",
+  },
   // Add similar objects for all remaining images
 };
 
