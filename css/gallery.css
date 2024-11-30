@@ -18,7 +18,7 @@ body{
     height: 60px;
     width: 60px;
     margin: 10px;
-    color: #fef6e4;
+    border-radius: 50%;
 }
 .menu_list{
     margin-left: 160px;
@@ -34,6 +34,14 @@ body{
 }
 .menu_items:hover{
     color: #f582ae;
+}
+.toggle_switch{
+    margin-top: 14px;
+    margin-left: 80px;
+}
+.toggle_btn{
+    height: 60px;
+    width: 60px;
 }
 /*navbar ended here*/
 
@@ -146,6 +154,14 @@ body{
     .menu_list{
         display: none;
     }
+    .toggle_switch{
+        margin-top: 35px;
+        margin-left: 300px;
+    }
+    .toggle_btn{
+        height: 45px;
+        width: 45px;
+    } 
     
     /*background_img*/
     .Banner{
@@ -182,5 +198,13 @@ body{
     }
     .menu_items:hover{
         color: #8bd3dd;
+    }
+    .toggle_switch{
+        margin-top: 28px;
+        margin-left: 10px;
+    }
+    .toggle_btn{
+        height: 40px;
+        width: 40px;
     }
 }
