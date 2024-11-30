@@ -179,6 +179,7 @@ body{
 .curosal_img img {
     width:100%;
      height:600px;
+     object-fit: cover;
 }
 .preq_cuorsal{
     position: absolute;
