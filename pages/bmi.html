@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IronPlus Gym - Home</title>
-    <link href="./css/style.css" type="text/css" rel="stylesheet" />
-    <link href="./css/home.css" type="text/css" rel="stylesheet" />
+    <title>BMI-Calculator</title>
+    <link href="./../css/bmi.css" type="text/css" rel="stylesheet" />
+
+    <link href="./../css/style.css" type="text/css" rel="stylesheet" />
+
     <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +16,7 @@
             <!-- Header Start -->
                 <header class="navbar">
                     <div class="hamburger">
-                        <img src="./img/hamburger.png" alt="hamburger" class="hamburger_size" />
+                        <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
                     </div>
                     <div class="logo_img">
                     <i class="fa-solid fa-dumbbell" style="color: #fef6e4; font-size: 40px; margin-top: 15px;"></i>
@@ -31,7 +33,7 @@
                         <a href="#" class="menu_items">Contact</a>
                     </div>
                     <div class="toggle_switch">
-                        <img src="./img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
+                        <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
                     </div>
                 </header>
             <!-- Header End -->
@@ -40,15 +42,32 @@
                     <!-- Curosal Start -->
                      <div class="main-curosal">
                         <div class="curosal_img" id="curosal_img">
-                            <img src="./img/home-curosal-img1.jpg"  alt="home-curosal-img1" />
+                            <img src="./../img/home-curosal-img1.jpg"  alt="home-curosal-img1" />
                         </div>
-                        <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
-                        <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./img/home-curosal-next.png"  alt="homecurosalnext" /></div>
+                        <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./../img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
+                        <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./../img/home-curosal-next.png"  alt="homecurosalnext" /></div>
                      </div>
                       <!-- Curosal End -->
                 </div>
             <!-- Wrapper End -->
-            <!-- Footer Start  -->
+
+     <!-- BMI calculate section-->
+     <img src="./../img/bmi.webp" class="bmi-img" />
+
+     <div class="bmi-container">
+        <h1>Try Our BMI Calculator....!</h1>
+
+         <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter your weight">
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter your height">
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <div class="result" id="result"></div>
+    </div>  
+ 
+<!-- Footer Start  -->
             <footer>
                 <div class="footer_section">
                   <div class="footer-nav-links">
@@ -107,7 +126,8 @@
         </div>
     <!-- Container End -->
     <!-- Script Start -->
-     <script type="text/javascript" src="./js/common.js"></script>
+     <script type="text/javascript" src="./../js/common.js"></script>
+          <script src="../js/bmi.js"></script>
     <!-- Script End -->
 </body>
 </html>

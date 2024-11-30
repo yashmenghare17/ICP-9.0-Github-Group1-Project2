@@ -1,0 +1,171 @@
+
+
+/*register from */
+.register-from-container
+{
+    background-color: #001858;
+    margin: 20px auto;
+   
+    width: 450px;
+    padding:20px ;
+  
+   border-radius: 10px;
+}
+.page-heading
+{
+    font-size: 30px;
+    text-align: center;
+    color: #fef6e4;
+}
+.paragraph
+{
+    text-align: center;
+    color: #fef6e4;
+}
+.from-container
+{
+    background-color: #001858;
+    padding: 20px;
+    margin: 10px auto;
+    
+   
+    
+}
+.input
+{
+   
+    margin: 5px;
+    width: 325px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 25px;
+}
+select
+{
+    margin: 5px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 25px;
+}
+.submit-btn
+{
+   
+    background-color: #ff6347;
+    color: #fef6e4;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 37px;
+    
+    
+    
+}
+.submit-btn:hover
+{
+    background-color:#ff4500;
+}
+
+
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.model
+{
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+   
+    
+}
+
+.model-heading
+{
+    font-size: 20px;
+    color:#172c66 ;
+    margin-left: 140px;
+}
+.dialog-paragraph
+{
+    font-size: 15px;
+    color: #172c66;
+}
+.ok-btn
+{
+    background-color:  #ff6347 ;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: 150px;
+}
+.ok-btn:hover
+{
+    background-color: #ff4500;
+}
+
+
+
+
+
+
+/* Mobile device */
+@media only screen and (max-width: 500px)
+ {
+    .curosal_img
+{
+    width: 500px;
+    height: 630px;
+}
+/*register from */
+.parent-container
+{
+    background-color: #f3d2c1;
+    height: 600px;
+    width: 400px;
+    padding:10px ;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+
+}
+
+
+
+
+/*Tablet device*/
+@media screen and (min-width: 501px) and (max-width : 992px)
+{
+    .curosal_img
+    {
+        width: 973px;
+        height: 630px;
+    }
+    /*register from */
+.parent-container
+{
+    background-color: #f3d2c1;
+    height: 600px;
+    width: 400px;
+    padding:10px ;
+   margin-left: 200px;
+   margin-top: 40px;
+}
+    
+
+}

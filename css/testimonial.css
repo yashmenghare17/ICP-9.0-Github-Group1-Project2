@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fef6e4;
+  color: #333;
+}
+
+/* Section Container */
+.section-container {
+  text-align: center;
+  padding: 20px;
+  color: #001858;
+}
+
+/* Header Styles */
+.header p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+/* Slider Styles */
+.slider-container {
+  padding: 50px 50px 30px 50px;
+  position: relative;
+}
+
+.slider {
+  font-family: "Parkinsans", sans-serif;
+  height: 220px;
+  width: 600px;
+  background-color: #001858;
+  color: #fef6e4;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 50px auto;
+  border-radius: 20px;
+}
+
+.slider .quote {
+  width: 540px;
+  height: 70px;
+  font-size: 17px;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.slider img {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: -70px;
+  left: 250px;
+}
+
+/* Arrow Navigation */
+.left-arrow,
+.right-arrow {
+  height: 45px;
+  position: absolute;
+  top: 200px;
+}
+
+.left-arrow {
+  left: 300px;
+}
+
+.right-arrow {
+  right: 300px;
+}
+
+/* cta Button */
+.cta-button {
+  background-color: #ff6347;
+  color: #fef6e4;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.cta-button:hover {
+  background-color: #ff4500;
+}
+
+/* Testimonial Form Styles */
+.testimonial-form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #001858;
+  border-radius: 10px;
+  width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-form-container h2 {
+  color: #fef6e4;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+#testimonial-form input,
+#testimonial-form textarea {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#testimonial-form button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Popup Styles */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #001858;
+  color: #ccc;
+  height: 100px;
+  width: 280px;
+  display: block;
+  margin: 200px auto;
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.close-icon {
+  position: absolute;
+  height: 20px;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-icon:hover {
+  height: 19px;
+  transform: scale(1.2);
+}
