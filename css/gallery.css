@@ -173,6 +173,29 @@ body{
         left: 20%;
         color: #001858;
     }
+    /*gallery box*/
+.gallery_container{
+    width: 70%;
+    margin-left: 50px;
+    padding: 20px;
+    display: block;
+    flex-wrap: wrap;
+}
+.gallery_box{
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.gallery_box:hover{
+    transform: scale(0.9);
+}
+.gallery_text{
+    text-align: center;
+    font-size: 40px;
+    color: #001858;
+    font-weight: bold;
+}
 }
 /*Tablet devices*/
 @media screen and (min-width: 501px) and (max-width : 992px){
