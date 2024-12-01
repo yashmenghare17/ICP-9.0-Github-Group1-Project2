@@ -2,7 +2,7 @@ function changeImage(num)
 {
     const mainImage=document.getElementById('mainImage');
     if(num===1){
-        mainImage.src="./img/pic2.jpg";
+        mainImage.src="./../img/pic2.jpg";
       
 
 
