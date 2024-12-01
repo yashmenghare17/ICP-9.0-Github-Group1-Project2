@@ -2,11 +2,12 @@ function calculateBMI() {
     const weight = parseFloat(document.getElementById('weight').value);
     const height = parseFloat(document.getElementById('height').value);
 
-    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+    if (!weight || !height || weight <= 0 || height <= 0) {
         document.getElementById('result').innerText = "Please enter valid weight and height values.";
         document.getElementById('bmiImage').style.display = "none";
         return;
     }
+    
 
     const heightInMeters = height / 100;
     const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
@@ -35,9 +36,8 @@ function calculateBMI() {
 }
 
 
- // JavaScript to handle tab switching
-const benefitItems = document.querySelectorAll(".benefit-item");
-const highlightBoxes = document.querySelectorAll(".highlight-box");
+ const benefitItems = document.querySelectorAll(".benefit-item");
+ const highlightBoxes = document.querySelectorAll(".highlight-box");
 
 // Add click event to each benefit item
 benefitItems.forEach(item => {
