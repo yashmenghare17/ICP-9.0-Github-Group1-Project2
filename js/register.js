@@ -1,35 +1,45 @@
-let curosal_data = document.getElementById("curosal_img");
-const curosalImgArray = ['home-curosal-img1', 'home-curosal-img2', 'home-curosal-img3', 'home-curosal-img4', 'home-curosal-img5'];
-let count = 0;
-function prevNext(type) {
-    if (type == 'Prev') {
-        count--;
-        if (count < 0) {
-            count = curosalImgArray.length - 1;
-        }
 
-    } else {
-        count++;
-        if (count >= curosalImgArray.length) {
-            count = 0;
-        }
-    }
-    curosal_data.innerHTML = `<img src="./../img/${curosalImgArray[count]}.jpg"  alt="${curosalImgArray[count]}" />`;
-}
-setInterval(function () {
-    prevNext('Next');
-}, 5000);
-function openModel() {
-    const overlayElement = document.getElementById('overlay');
-    overlayElement.style.display = 'flex';
+ function openModel()
+  {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const state = document.getElementById('state').value;
+    const city = document.getElementById('city').value;
+    const gym = document.getElementById('gym').value;
 
+
+
+     const formData = {
+        name: name,
+        email: email,
+        phone: phone,
+        state: state,
+        city: city,
+        gym: gym
+      };
+      
+
+      localStorage.setItem('formData', JSON.stringify(formData));
+      document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('phone').value = '';
+    document.getElementById('state').value = '';
+    document.getElementById('city').value = '';
+    document.getElementById('gym').value = '';
+      
+      document.getElementById('overlay').style.display = 'block';
+      
+   
+  }
+  
+
+function okButton()
+{
+    document.getElementById('overlay').style.display = 'none';
 }
-function closeModel() {
-    const overlayElement = document.getElementById('overlay');
-    overlayElement.style.display = 'none';
-}
-function okButton() {
-    const overlayElement = document.getElementById('overlay');
-    overlayElement.style.display = 'none';
-}
+    
+
+
+
 

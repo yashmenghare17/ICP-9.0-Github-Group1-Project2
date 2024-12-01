@@ -1,183 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/registration.css">
-    <link rel="stylesheet" href="./../css/style.css">
-    <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
-    
-    <title>Registration</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./../img/gymlogo.jpg" type="image/icon type">
+  <link rel="stylesheet" href="./../css/registration.css">
+  <link rel="stylesheet" href="./../css/style.css">
+  <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
+
+  <title>IronPlus Gym - Registration</title>
 </head>
+
 <body>
-    <div class="container">
-        <!-- Header Start -->
-            <header class="navbar">
-                <div class="hamburger">
-                    <img src="./../img/hamburger.png" alt="hamburger" onclick="openSidebar()" class="hamburger_size" />
-                   </div>
-                <div class="logo_img">
-                <i class="fa-solid fa-dumbbell" style="color: #fef6e4; font-size: 40px; margin-top: 15px;"></i>
-                </div>
-                <div class="menu_list">
-                    <a href="../index.html" class="menu_items">Home</a>
-                    <a href="#" class="menu_items">Gallery</a>
-                    <a href="#" class="menu_items">GYM Package</a>
-                    <a href="#" class="menu_items">BIM Calculator</a>
-                    <a href="../pages/testimonial.html" class="menu_items">Testimonial</a>
-                    <a href="#" class="menu_items">Careers</a>
-                    <a href="#" class="menu_items">About Us</a>
-                    <a href="#" class="menu_items">Registration</a>
-                    <a href="#" class="menu_items">Contact</a>
-                </div>
-                <div class="toggle_switch">
-                    <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
-                </div>
-            </header>
-        <!-- Header End -->
+  <!-- Container Start -->
+  <div class="container">
+    <!-- Header Start -->
+        <header class="navbar">
+            <div class="logo_img" onclick="window.location='./../index.html'">
+              <img src="./../img/gymlogo.jpg" alt="logo" class="logo"/>
+            </div>
+            <div class="toggle_switch">
+              <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
+            </div>
+            <div class="hamburger" onclick="menutoggle()">
+              <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
+            </div>
+            <div class="menu_list" id="menu_list">
+              <a href="../index.html" class="menu_items active">Home</a>
+              <a href="../pages/gallery.html" class="menu_items">Gallery</a>
+              <a href="../pages/package.html" class="menu_items">GYM Package</a>
+              <a href="../pages/bmi.html" class="menu_items">BIM Calculator</a>
+              <a href="../pages/testimonial.html" class="menu_items">Testimonial</a>
+              <a href="../pages/aboutus.html" class="menu_items">About Us</a>
+              <a href="#" class="menu_items">Registration</a>
+              <a href="../pages/Gym-franchise.html" class="menu_items">Franchise</a>
+              <a href="../pages/contact.html" class="menu_items">Contact</a>
+          </div>
+        </header>
+    <!-- Header End -->
 
 
-        <!-- Wrapper Start -->
-        <div class="wrapper">
-          <!-- Curosal Start -->
-           <div class="main-curosal">
-              <div class="curosal_img" id="curosal_img">
-                  <img src="./../img/home-curosal-img1.jpg"  alt="home-curosal-img1" />
-              </div>
-              <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./../img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
-              <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./../img/home-curosal-next.png"  alt="homecurosalnext" /></div>
-           </div>
-            <!-- Curosal End -->
+    
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+      <!-- Curosal Start -->
+       <div class="main-curosal">
+          <div class="curosal_img" id="curosal_img">
+              <img src="./../img/home-curosal-img1.jpg"  alt="home-curosal-img1" />
+          </div>
+          <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./../img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
+          <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./../img/home-curosal-next.png"  alt="homecurosalnext" /></div>
+       </div>
+      <!-- Curosal End -->
+
+       <h1 class="register-heading">Registration Form</h1>
+       <p class="register-paragraph">Welcome to our gym registration from! Were excited to have you join our fitness <br> community. Please take a few moments to provide us with the required information so <br> that we can get you started on your fitness journey</p>
+       <div class="parent-container">
+      <div class="child-container">
+       <p class="paragraph-container">The Gym Registration Form is a convenient online tool that allows individuals  to sign up for gym memberships. By filling out this form, users can provide their  personal information, contact details, and fitness goals, allowing the gym to process  their membership request. This form streamlines the registration process, making it easier for individuals to join the gym and for the gym to manage  member data.</p>
       </div>
-  <!-- Wrapper End -->
-         
+      <img src="../img/home-curosal-img1.jpg" alt="" class="register-img">
+      </div>
+    <!--Register from-->
+    <div class="register-from-container">
+      <h1 class="page-heading">Book A Free Trial</h1>
+      <p class="paragraph">Fill Out This From To Book Your Free Trial</p>
+      <form action="" class="from-container">
 
-   <!--Register from-->
-   <div class="register-from-container">
-    <h1 class="page-heading">Book A Free Trial</h1>
-    <p class="paragraph">Fill Out This From To Book Your Free Trial</p>
-    <form action="" class="from-container">
-        
-        <input type="text" class="input" placeholder="Enter name"><br>
-        <input type="text" class="input" placeholder="Enter Email"><br>
-        <input type="number" class="input" placeholder="Enter phone"><br>
-        <select name="state " id="state" class="" >
-            <option value="">select state</option>
-            <option value="Andhra Pradesh">Andhra Pradesh</option>
-            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-            <option value="Assam">Assam</option>
-            <option value="Bihar">Bihar</option>
-            <option value="Chhattisgarh">Chhattisgarh</option>
-            <option value="Goa">Goa</option>
-            <option value="Gujarat">Gujarat</option>
-            <option value="Haryana">Haryana</option>
-            <option value="Himachal Pradesh">Himachal Pradesh</option>
-            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-            <option value="Jharkhand">Jharkhand</option>
-            <option value="Karnataka">Karnataka</option>
-            <option value="Kerala">Kerala</option>
-            <option value="Madhya Pradesh">Madhya Pradesh</option>
-            <option value="Maharashtra">Maharashtra</option>
-            <option value="Manipur">Manipur</option>
-            
+        <input type="text" id="name" class="input" placeholder="Enter name" required/><br>
+        <input type="email" id="email" class="input" placeholder="Enter Email" required /><br>
+        <input type="number" id="phone" class="input" placeholder="Enter phone" required /><br>
+        <select name="state " id="state" class="" required>
+          <option value="">select state</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+
         </select><br>
-        
-        <select name="city" id="city" class="">
-            <option value="">select city</option>
-            <option value="Bangalore">Bangalore</option>
-            <option value="Chennai">Chennai</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Kolkata">Kolkata</option>
-            <option value="Mumbai">Mumbai</option>
-            <option value="Pune">Pune</option>
+
+        <select name="city" id="city" class="" required>
+          <option value="">select city</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
         </select>
-        
-        <select name="gym" id="gym" class="">
-            <option value="">select gym</option>
-            <option value="IronPlus">IronPlus</option>
-            <option value="Gold Gym">Gold Gym</option>
-            <option value="Planet Fitness">Planet Fitness</option>
-            <option value="Anytime Fitness">Anytime Fitness</option>
-            <option value="LA Fitness">LA Fitness</option>
-            <option value="24 Hour Fitness">24 Hour Fitness</option>
+
+        <select name="gym" id="gym" class="" required>
+          <option value="">select gym</option>
+          <option value="IronPlus">IronPlus</option>
+          <option value="Gold Gym">Gold Gym</option>
+          <option value="Planet Fitness">Planet Fitness</option>
+          <option value="Anytime Fitness">Anytime Fitness</option>
+          <option value="LA Fitness">LA Fitness</option>
+          <option value="24 Hour Fitness">24 Hour Fitness</option>
 
         </select>
-        
-        <button type="button" class="submit-btn input" onclick="openModel()">Submit</button>
 
-    </form>
-</div>
-<div class="overlay" id="overlay">
-  <div class="model">
-      
-      <h2 class="model-heading">Thank You!</h2>
-      <p class="dialog-paragraph" > Your details has been successfully submitted.Thanks!</p>
-      <button type="button" onclick="okButton()" class="ok-btn">Ok</button>
+        <button type="button" class="submit-btn input" onclick="openModel()" >Submit </button>
 
-  </div>
-
-  
-
-</div>
-
-
-<!-- Footer Start  -->
-<footer>
-  <footer class="footer_section">
-    <div class="footer-nav-links">
-      <h3>Links</h3>
-      <ul>
-        <li><a href="../index.html" class="footer_text">Home</a></li>
-        <li><a href="" class="footer_text">About Us</a></li>
-        <li><a href="" class="footer_text">Contact</a></li>
-        <li><a href="" class="footer_text">Register</a></li>
-      </ul>
+      </form>
     </div>
-    <div class="footer-nav-links">
-      <h3>Important Links</h3>
-      <ul>
-        <li><a href="" class="footer_text">Gallery</a></li>
-        <li><a href="" class="footer_text">Gym Package</a></li>
-        <li><a href="" class="footer_text">BIM Calculator</a></li>
-        <li><a href="../pages/testimonial.html" class="footer_text">Testimonial</a></li>
-        <li><a href="" class="footer_text">Careers</a></li>
-      </ul>
+    <div class="overlay" id="overlay">
+      <div class="model">
+
+        <h2 class="model-heading">Thank You!</h2>
+        <p class="dialog-paragraph"> Your details has been successfully submitted.Thanks!</p>
+        <button type="button" onclick="okButton()" class="ok-btn">Ok</button>
+
+      </div>
     </div>
-    <div class="footer-nav-links">
-      <h3>Address</h3>
-      <ul>
-        <li>6709 Civil Lines,</li>
-        <li>Netaji Nagar, Area 15,</li>
-        <li>Pune, Maharashtra 440678 India</li>
-      </ul>
-      <div class="footer-follow-us-Container">
-        <h3>Follow Us</h3>
-        <div class="top-nav-icons">
-          <a href="http://facebook.com" target="_blank">
-            <i class="fa-brands fa-facebook Social"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank">
-            <i class="fa-brands fa-instagram Social"></i>
-          </a>
-          <a href="https://web.telegram.org" target="_blank">
-            <i class="fa-brands fa-telegram Social"></i>
-          </a>
-          <a href="https://youtube.com" target="_blank">
-            <i class="fa-brands fa-youtube Social"></i>
-          </a>
+
+
+     <!-- Footer Start  -->
+     <footer>
+      <div class="footer_section">
+        <div class="footer-nav-links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="../index.html" class="footer_text">Home</a></li>
+            <li><a href="../pages/aboutus.html" class="footer_text">About Us</a></li>
+            <li><a href="../pages/contact.html" class="footer_text">Contact</a></li>
+            <li><a href="#" class="footer_text">Register</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-links">
+          <h3>Important Links</h3>
+          <ul>
+            <li><a href="../pages/gallery.html" class="footer_text">Gallery</a></li>
+            <li><a href="../pages/package.html" class="footer_text">Gym Package</a></li>
+            <li><a href="../pages/bmi.html" class="footer_text">BIM Calculator</a></li>
+            <li><a href="../pages/testimonial.html" class="footer_text">Testimonial</a></li>
+            <li><a href="../pages/Gym-franchise.html" class="footer_text">Franchise</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-links">
+          <h3>Address</h3>
+          <ul>
+            <li>6709 Civil Lines,</li>
+            <li>Netaji Nagar, Area 15,</li>
+            <li>Pune, Maharashtra 440678 India</li>
+          </ul>
+          <div class="footer-follow-us-Container">
+            <h3>Follow Us</h3>
+            <div class="top-nav-icons">
+              <a href="http://facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook Social"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram Social"></i>
+              </a>
+              <a href="https://web.telegram.org" target="_blank">
+                <i class="fa-brands fa-telegram Social"></i>
+              </a>
+              <a href="https://youtube.com" target="_blank">
+                <i class="fa-brands fa-youtube Social"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="footer-copyright-section">
-    <p>
-      Copyright © 2024 Gym Website. All rights reserved | Design by
-      ICP-9.0 Group 1
-    </p>
-  </div>
+      <div class="footer-copyright-section">
+        <p>
+          Copyright © 2024 Gym Website. All rights reserved | Design by
+          ICP-9.0 Group 1
+        </p>
+      </div>
+    </footer>
+  <!-- Footer End -->
+</div>
+   
+<script type="text/javascript">
+  let page='registration';
+</script>
+    
+  <script src="../js/common.js"></script>
 
-</footer>
-<script src="./../js/register.js"></script>    
+  <script src="./../js/register.js"></script>
+
+
+
 </body>
 </html>
