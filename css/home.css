@@ -17,6 +17,7 @@
     box-shadow: 0px 10px 10px #333;
     border-radius: 10px;
     cursor: pointer;
+    width: 100px;
     
 }
 .diff_card img{
@@ -57,11 +58,12 @@
     background-color: #fff;
     padding: 20px 30px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 450px;
+    top: 20%;
 }
 #modal_img{
     object-fit: cover;
@@ -85,4 +87,150 @@
 .ok-btn:hover
 {
     background-color: #ff4500;
+}
+.contentsectiondiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.conentsectiondivcard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1000px; 
+}
+.conentsectiondivcard p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+.section3contentcard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1000px;
+    margin-bottom: 25px;
+}
+.section3contentcard p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+.section3contentcard img{
+    width: 500px;
+    height: 320px;
+}
+.rightmarginimgdiv{
+    margin-right: 20px;
+}
+.leftmarginimgdiv{
+    margin-left: 20px;
+}
+@media screen and (max-width: 500px){
+    .diff_div{
+        width: 100%;
+        flex-direction: column;
+    }
+    .diff_card{
+        margin-bottom: 20px;
+    }
+    .conentsectiondivcard{
+        width: 100%; 
+        flex-direction: column;
+    }
+    .conentsectiondivcard p{
+        padding:12px;
+        
+    }
+    .section3contentcard{
+        width: 100%;
+        flex-direction: column;
+       justify-content: center;
+    }
+    .section3contentcard img{
+        width: 500px;
+        height: 320px;
+    }
+    .section3contentcard p{
+        padding:12px;
+    }
+    .section3contentcard h3{
+        text-align: center;
+    }
+    .section3contentcard img{
+        width: 100%;
+        object-fit:cover;
+    }
+    .rightmarginimgdiv{
+        margin-right: 0px;
+    }
+    .leftmarginimgdiv{
+        margin-left: 0px;
+    }
+    .conentsectiondivcard iframe{
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+    }
+    .model
+    {
+        width: 250px;
+        z-index: 999999;
+    }
+    .model h2{
+        font-size: 15px;
+        text-align: center;
+    }   
+    .iframediv{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 501px) and (max-width : 992px){
+    .diff_div {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .diff_card p{
+       overflow-wrap: break-word;
+    }
+    .conentsectiondivcard{
+        flex-direction: column;
+        width: 100%;
+    }
+    .conentsectiondivcard iframe{
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+    }
+    .rightmarginimgdiv{
+        margin-right: 0px;
+    }
+    .leftmarginimgdiv{
+        margin-left: 0px;
+    }
+    .section3contentcard{
+        width: 100%;
+        flex-direction: column;
+    }
+    .section3contentcard img{
+        width: 100%;
+    }
+    .section3contentcard h3{
+        text-align: center;
+    }
+    .section3contentcard p{
+        padding:12px;
+    }
+    .conentsectiondivcard p{
+        padding:12px;
+        
+    }
+    .iframediv{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 993px) and (max-width : 1280px){
+ 
 }
