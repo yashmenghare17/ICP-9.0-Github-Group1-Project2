@@ -22,11 +22,11 @@ body {
 }
 
 /*FAQ Section*/
-.faq-section{
+.faq-section {
   margin-top: 40px;
 }
 
-.faq-heading{
+.faq-heading {
   color: #fef6e4;
   text-align: center;
   margin: 20px auto;
@@ -36,9 +36,7 @@ body {
   width: fit-content;
 }
 
-
-.faq-cards-container
-{
+.faq-cards-container {
   background-color: #001858;
   display: flex;
   flex-wrap: wrap;
@@ -203,21 +201,132 @@ body {
   transform: scale(1.2);
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+/* small devices (mobiles, less than 500px) */
+@media screen and (min-width: 360px) and (max-width: 500px) {
+  .faq-heading {
+    padding: 15px;
+    font-size: 25px;
+  }
+
+  .faq-cards-container {
+    width: 70%;
+    padding: 35px;
+    flex-direction: column;
+  }
+
+  .faq-item {
+    height: auto;
+    width: 180px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .slider-container {
+    padding: 50px 0;
+    position: relative;
+  }
+
   .slider {
-    width: 350px;
+    height: 270px;
+    width: 220px;
+    margin: 30px auto;
+  }
+
+  .slider .quote {
+    width: fit-content;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .slider h4 {
+    margin-top: 20px;
+    font-size: 18px;
   }
 
   .slider img {
-    height: 100px;
-    width: 100px;
-    top: -50px;
-    left: 150px;
+    height: 90px;
+    width: 90px;
+    top: -40px;
+    left: 85px;
   }
 
   .left-arrow,
   .right-arrow {
     height: 35px;
+    top: 220px;
+  }
+
+  .left-arrow {
+    left: -5px;
+  }
+
+  .right-arrow {
+    right: -5px;
+  }
+
+  .testimonial-form-container {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .faq-heading {
+    padding: 15px;
+    font-size: 25px;
+  }
+
+  .faq-cards-container {
+    width: 70%;
+    padding: 35px;
+    flex-direction: column;
+  }
+
+  .faq-item {
+    height: auto;
+    width: 220px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .slider-container {
+    padding: 50px 0;
+    position: relative;
+  }
+
+  .slider {
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+  }
+
+  .slider .quote {
+    width: fit-content;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .slider h4 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .slider img {
+    height: 90px;
+    width: 90px;
+    top: -40px;
+    left: 100px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    height: 35px;
+    top: 200px;
   }
 
   .left-arrow {
@@ -228,9 +337,74 @@ body {
     right: 10px;
   }
 
-  .slider .quote {
-    width: 280px;
+  .testimonial-form-container {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .faq-heading {
+    padding: 15px;
+    font-size: 25px;
+  }
+
+  .faq-cards-container {
+    width: 80%;
+    padding: 35px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .faq-item {
     height: auto;
-    margin-top: 60px;
+    width: 220px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .slider-container {
+    padding: 50px 0;
+    position: relative;
+  }
+
+  .slider {
+    height: 250px;
+    width: 450px;
+    margin: 30px auto;
+  }
+
+  .slider .quote {
+    width: fit-content;
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .slider h4 {
+    margin-top: 20px;
+    font-size: 21px;
+  }
+
+  .slider img {
+    height: 120px;
+    width: 120px;
+    top: -60px;
+    left: 180px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    height: 35px;
+    top: 220px;
+  }
+
+  .left-arrow {
+    left: 10px;
+  }
+
+  .right-arrow {
+    right: 10px;
   }
 }
