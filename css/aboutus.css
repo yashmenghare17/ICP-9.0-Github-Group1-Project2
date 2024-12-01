@@ -104,8 +104,15 @@ body{
 
 @media screen and (max-width: 500px){
     /*navbar*/
+    .container{
+        position: relative;
+    }
     .hamburger{
-       visibility: visible;
+       display: flex;
+       width: 5%;
+       justify-content: right;
+       align-items: center;
+       padding-right: 15px;
     }
     .hamburger_size{
         height: 20px;
@@ -118,15 +125,49 @@ body{
     }
     .menu_list{
         display: none;
+        position: absolute;
+        right: 0%;
+        z-index: 99999;
+        width: 40%;
+        top: 1.25%;
+        background-color: inherit;
+        padding:5px 10px;
     }
+   .menu_items{
+    margin-right: 0px;
+    display: block;
+    font-size: 12px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+   }
+   .active  {
+    padding:10px 15px;
+   }
+   .menu_items:hover{
+    padding:10px 15px;
+   }
     .toggle_switch{
-        margin-top: 35px;
-        margin-left: 300px;
+        width: 60%;
+        padding-right: 25px;
+        justify-content: right;
     }
     .toggle_btn{
         height: 45px;
         width: 45px;
     } 
+    .curosal_img img {
+        width:100%;
+        height:400px;
+        object-fit: cover;
+    }
+    .preq_cuorsal img{
+        height: 40px;
+       
+    }
+    .next_cuorsal img{
+        height: 40px;
+       
+    }
     /*background_img*/
     .Banner{
         position: relative;
@@ -138,6 +179,8 @@ body{
         color: #001858;
     }
 }
+
+/*Tablet devices*/
 @media screen and (min-width: 501px) and (max-width : 992px){
     .container{
         position: relative;
@@ -238,6 +281,7 @@ body{
     }
 
 }
+
 
 h1{
 text-align: center;
