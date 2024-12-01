@@ -273,5 +273,40 @@ box-sizing: 0px 0px 10px 0px rgb(140, 127, 127);
 margin:10px;
 
 }
+.img1{
+    height:500px;
+    width:1200px;
+    margin:0px 200px;
+}
 
+@media screen and (max-width: 600px){
+    h1{
+        font-size:30px;
+        text-align: center;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .iteam{
+        display: flex;
+    flex-direction:column;
 
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        height:200px;
+width:500px;
+    }
+    .image{
+        height:50px;
+        width:50px;
+    }
+    .img1{
+        height:200px;
+        width:400px;
+        
+    }
+}
