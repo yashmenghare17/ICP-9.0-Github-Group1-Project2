@@ -1,37 +1,35 @@
 function calculateBMI() {
-    
-const weight = parseFloat(document.getElementById('weight').value);
- 
-const height = parseFloat(document.getElementById('height').value);
- 
-    if (!(weight > 0 && height > 0)) {
-        document.getElementById('result').innerText = 'Enter positive numbers for weight and height.';
+    const weight = parseFloat(document.getElementById('weight').value);
+    const height = parseFloat(document.getElementById('height').value);
+
+    if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+        document.getElementById('result').innerText = "Please enter valid weight and height values.";
+        document.getElementById('bmiImage').style.display = "none";
         return;
     }
-    
+
     const heightInMeters = height / 100;
-    // Convert height from centimeters to meters .
+    const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
 
-    const bmi = weight / (heightInMeters * heightInMeters);
-    // Calculate BMI using the formula: weight (kg) / (height (m) * height (m)).
-
-    let category = '';
-    // Initialize a variable to store the BMI category 
+    let category = "";
+    let imageUrl = "";
 
     if (bmi < 18.5) {
-        category = 'Underweight';
-        // BMI less than 18.5 is considered underweight.
+        category = "Underweight";
+        imageUrl = "./../img/underweight.jpg";
     } else if (bmi >= 18.5 && bmi < 24.9) {
-        category = 'Normal weight';
-        // BMI between 18.5 and 24.9 is considered normal weight.
+        category = "Normal weight";
+        imageUrl = "./../img/normal.jpg";
     } else if (bmi >= 25 && bmi < 29.9) {
-        category = 'Overweight';
-        // BMI between 25 and 29.9 is considered overweight.
+        category = "Overweight";
+        imageUrl = "./../img/overweight.jpg";
     } else {
-        category = 'Obesity';
-        // BMI of 30 or higher is considered obesity.
+        category = "Obese";
+        imageUrl = "./../img/obese.jpg";
     }
-   document.getElementById('result').innerHTML = `
-    <span style="color: white;">Your BMI is ${bmi.toFixed(2)} (${category})</span>.
-    `;
-    }
+
+    document.getElementById('result').innerText = `Your BMI is ${bmi} (${category}).`;
+    const bmiImage = document.getElementById('bmiImage');
+    bmiImage.src = imageUrl;
+    bmiImage.style.display = "block";
+}
