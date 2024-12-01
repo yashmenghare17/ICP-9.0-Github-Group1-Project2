@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IronPlus Gym - Gallery</title>
   <link href="./../css/gallery.css" rel="stylesheet" />
+  <link href="./../css/home.css" rel="stylesheet"/>
+  <link href="./../css/style.css" rel="stylesheet"/>
+  <script src="./../js/gallery.js"></script>
   <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +20,7 @@
         <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
       </div>
       <div class="logo_img">
-        <i class="fa-solid fa-dumbbell" style="color: #fef6e4; font-size: 40px; margin-top: 15px;"></i>
+        <img src="./../img/gymlogo.jpg" alt="logo" class="logo"/>
       </div>
       <div class="menu_list">
         <a href="./../index.html" class="menu_items">Home</a>
@@ -32,38 +35,58 @@
       </div>
       <div class="toggle_switch">
         <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
-      </div>
     </div>
-    <!--Banner-->
-    <div class="Banner">
-      <span>
-        <img src="./../img/Website_banner.webp" class="banner_img" />
-      </span>
-      <div class="banner_text">
-        <h1 class="banner_heading">Welcome to our GYM</h1>
-        <p class="banner_subtext">Transform Your Body, Transform Your Life</p>
-        <button class="btn">Join Now</button>
-      </div>
     </div>
+
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+      <!-- Curosal Start -->
+       <div class="main-curosal">
+          <div class="curosal_img" id="curosal_img">
+              <img src="./../img/home-curosal-img1.jpg"  alt="home-curosal-img1" />
+          </div>
+          <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./../img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
+          <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./../img/home-curosal-next.png"  alt="homecurosalnext" /></div>
+       </div>
+        <!-- Curosal End -->
+  </div>
+<!-- Wrapper End -->
+<!-- Footer Start  -->
+
+   <!--Gallery started-->
     <div class="gallery_container">
       <span>
         <p class="gallery_text">Our Gallery</p>
       </span>
-       <img src="./../img/gallery_img_1.webp" class="gallery_box" alt="gallery_img_1"/>
-       <img src="./../img/gallery_img_2.webp" class="gallery_box" alt="gallery_img_2"/>
-       <img src="./../img/gallery_img_3.webp" class="gallery_box" alt="gallery_img_3"/>
-       <img src="./../img/gallery_img_4.webp" class="gallery_box" alt="gallery_img_4"/>
-       <img src="./../img/gallery_img_5.webp" class="gallery_box" alt="gallery_img_5"/>
-       <img src="./../img/gallery_img_6.webp" class="gallery_box" alt="gallery_img_6"/>
-       <img src="./../img/gallery_img_7.webp" class="gallery_box" alt="gallery_img_7"/>
-       <img src="./../img/gallery_img_8.webp" class="gallery_box" alt="gallery_img_8"/>
-       <img src="./../img/gallery_img_9.webp" class="gallery_box" alt="gallery_img_9"/>
-       <img src="./../img/gallery_img_10.webp" class="gallery_box" alt="gallery_img_10"/>
-       <img src="./../img/gallery_img_11.webp" class="gallery_box" alt="gallery_img_11"/>
-       <img src="./../img/gallery_img_12.webp" class="gallery_box" alt="gallery_img_12"/>
-       
+       <img src="./../img/gallery_img_1.webp" class="gallery_box" alt="gallery_img_1" onclick="openoverlay(1)"/>
+       <img src="./../img/gallery_img_2.webp" class="gallery_box" alt="gallery_img_2" onclick="openoverlay(2)"/>
+       <img src="./../img/gallery_img_3.webp" class="gallery_box" alt="gallery_img_3" onclick="openoverlay(3)"/>
+       <img src="./../img/gallery_img_4.webp" class="gallery_box" alt="gallery_img_4" onclick="openoverlay(4)"/>
+       <img src="./../img/gallery_img_5.webp" class="gallery_box" alt="gallery_img_5" onclick="openoverlay(5)"/>
+       <img src="./../img/gallery_img_6.webp" class="gallery_box" alt="gallery_img_6" onclick="openoverlay(6)"/>
+       <img src="./../img/gallery_img_7.webp" class="gallery_box" alt="gallery_img_7" onclick="openoverlay(7)"/>
+       <img src="./../img/gallery_img_8.webp" class="gallery_box" alt="gallery_img_8" onclick="openoverlay(8)"/>
+       <img src="./../img/gallery_img_9.webp" class="gallery_box" alt="gallery_img_9" onclick="openoverlay(9)"/>
+       <img src="./../img/gallery_img_10.webp" class="gallery_box" alt="gallery_img_10" onclick="openoverlay(10)"/>
+       <img src="./../img/gallery_img_11.webp" class="gallery_box" alt="gallery_img_11" onclick="openoverlay(11)"/>
+       <img src="./../img/gallery_img_12.webp" class="gallery_box" alt="gallery_img_12" onclick="openoverlay(12)"/> 
+    </div>
+
+    <div class="overlay" id="overlay">
+         <div class="model">
+          <img src="./../img/cross.png" class="close" onclick="closeoverlay()"/>
+          <div class="dialog_box_1">
+             <img src="./../img/gallery_img_1.webp" alt="gallery_img_1" class="model_img" id="model_img"/>
+          </div>
+          <span class="modelbox_text" id="modelbox_text">
+             <h2>Gym Floor Overview:</h2>
+              <p>"Welcome to our state-of-the-art gym! With a spacious workout floor and cutting-edge equipment, we ensure a fulfilling fitness experience for everyone."</p>
+          </span>
+         </div>
     </div>
   </div>
+<!--Gallery section ended-->
+
   <!--Footer-->
   <footer>
     <div class="footer_section">
@@ -119,8 +142,12 @@
       </p>
     </div>
   </footer>
-
   <!-- footer has been ended here -->
+
+  <!-- Script Start -->
+  <script type="text/javascript" src="./../js/common.js"></script>
+  
+  <!-- Script End -->
 </body>
 
 </html>

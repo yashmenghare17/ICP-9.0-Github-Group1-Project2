@@ -16,14 +16,47 @@ body {
 }
 
 /* Header Styles */
-.header p {
-  font-size: 1.2em;
-  margin: 0;
+.page-heading {
+  font-size: 30px;
+  margin: 20px 0;
 }
 
-.header h1 {
-  font-size: 2em;
-  margin-top: 10px;
+/*FAQ Section*/
+.faq-section{
+  margin-top: 40px;
+}
+
+.faq-heading{
+  color: #fef6e4;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 30px;
+  background-color: #001858;
+  width: fit-content;
+}
+
+
+.faq-cards-container
+{
+  background-color: #001858;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
+
+.faq-item {
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+  background-color: #fef6e4;
+  color: #001858;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /* Slider Styles */
@@ -168,4 +201,36 @@ body {
 .close-icon:hover {
   height: 19px;
   transform: scale(1.2);
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .slider {
+    width: 350px;
+  }
+
+  .slider img {
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    left: 150px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    height: 35px;
+  }
+
+  .left-arrow {
+    left: 10px;
+  }
+
+  .right-arrow {
+    right: 10px;
+  }
+
+  .slider .quote {
+    width: 280px;
+    height: auto;
+    margin-top: 60px;
+  }
 }
