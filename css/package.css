@@ -79,3 +79,42 @@
     background-color: #ff4500;
     cursor: pointer;
 }
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.model{
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.model-heading{
+    font-size: 20px;
+    color:#172c66 ;
+    margin-left: 140px;
+}
+
+.dialog-paragraph{
+    font-size: 15px;
+    color: #172c66;
+}
+
+.ok-btn{
+    background-color:  #ff6347 ;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: 150px;
+}
