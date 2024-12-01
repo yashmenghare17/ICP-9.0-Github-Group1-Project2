@@ -1,39 +1,94 @@
-
-
-/*register from */
-.register-from-container
+body
 {
+    background-color: #fef6e4;
+}
+.register-heading
+{
+    font-size: 35px;
+    text-align: center;
+    color: #001858;
+}
+.parent-container
+{
+    margin: 50px 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:  #fffffe;
+}
+.child-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+.register-img
+{
+    height: 400px;
+    width: 500ppx;
+   margin: 20px ;
+
+}
+.paragraph-container
+{
+   font-size: 20px;
+   text-align: center;
+   margin: 20px;
+
+    
+
+}
+
+
+
+
+
+
+
+
+.register-paragraph
+{
+    font-size: 20px;
+    text-align: center;
+    color: #001858;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.register-from-container {
     background-color: #001858;
     margin: 20px auto;
-   
     width: 450px;
-    padding:20px ;
-  
-   border-radius: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    
 }
-.page-heading
-{
+
+.page-heading {
     font-size: 30px;
     text-align: center;
     color: #fef6e4;
 }
-.paragraph
-{
+
+.paragraph {
     text-align: center;
     color: #fef6e4;
 }
-.from-container
-{
+
+.from-container {
     background-color: #001858;
     padding: 20px;
     margin: 10px auto;
-    
-   
-    
+
+
+
 }
-.input
-{
-   
+
+.input {
+
     margin: 5px;
     width: 325px;
     border-radius: 5px;
@@ -41,8 +96,8 @@
     padding: 10px;
     margin-left: 25px;
 }
-select
-{
+
+select {
     margin: 5px;
     width: 350px;
     border-radius: 5px;
@@ -50,9 +105,9 @@ select
     padding: 10px;
     margin-left: 25px;
 }
-.submit-btn
-{
-   
+
+.submit-btn {
+
     background-color: #ff6347;
     color: #fef6e4;
     padding: 10px;
@@ -60,18 +115,17 @@ select
     cursor: pointer;
     margin-top: 20px;
     margin-left: 37px;
-    
-    
-    
+
+
+
 }
-.submit-btn:hover
-{
-    background-color:#ff4500;
+
+.submit-btn:hover {
+    background-color: #ff4500;
 }
 
 
-.overlay
-{
+.overlay {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
@@ -84,38 +138,41 @@ select
 
 
 }
-.model
-{
+
+.model {
     background-color: #fff;
     padding: 20px 30px;
     border-radius: 10px;
     position: relative;
-   
-    
+    width: 360px;
+    height: 160px;
+    margin-left: 550px;
+
+
 }
 
-.model-heading
-{
+.model-heading {
     font-size: 20px;
-    color:#172c66 ;
-    margin-left: 140px;
+    color: #172c66;
+    margin-left: 136px;
 }
-.dialog-paragraph
-{
+
+.dialog-paragraph {
     font-size: 15px;
     color: #172c66;
 }
-.ok-btn
-{
-    background-color:  #ff6347 ;
+
+.ok-btn {
+    background-color: #ff6347;
     color: #fff;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 15px;
     margin-left: 150px;
+    cursor: pointer;
 }
-.ok-btn:hover
-{
+
+.ok-btn:hover {
     background-color: #ff4500;
 }
 
@@ -125,23 +182,53 @@ select
 
 
 /* Mobile device */
-@media only screen and (max-width: 500px)
- {
-    .curosal_img
-{
-    width: 500px;
-    height: 630px;
-}
-/*register from */
-.parent-container
-{
-    background-color: #f3d2c1;
-    height: 600px;
-    width: 400px;
-    padding:10px ;
-   margin-left: 20px;
-   margin-top: 20px;
-}
+@media only screen and (max-width: 500px) {
+    .curosal_img {
+        width: 500px;
+        height: 630px;
+    }
+    .parent-container
+    {
+        width: 300px;
+        height: 400px;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .register-img
+    {
+        width: 200px;
+        height: 200px;
+        margin-left: 50px;
+    }
+    .paragraph-container
+   {
+     font-size: 10px;
+     
+     margin: 5px;
+   }
+
+    /*register from */
+    .register-from-container {
+
+        height: 600px;
+        width: 400px;
+        padding: 10px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .input {
+        margin-left: 5px;
+
+    }
+
+    select {
+        margin-left: 5px;
+    }
+
+    .model {
+        margin-left: 15px;
+    }
 
 }
 
@@ -149,23 +236,48 @@ select
 
 
 /*Tablet device*/
-@media screen and (min-width: 501px) and (max-width : 992px)
-{
-    .curosal_img
-    {
-        width: 973px;
+@media screen and (min-width: 501px) and (max-width : 992px) {
+    .curosal_img {
+        width: 819px;
         height: 630px;
     }
+    .parent-container
+    {
+        width: 500px;
+        height: 600px;
+        flex-direction: column;
+        margin-left: 130px;
+    }
+    .register-img
+    {
+        width: 400px;
+        height: 200px;
+        margin-left: 50px;
+        padding: 10px;
+    }
+
     /*register from */
-.parent-container
-{
-    background-color: #f3d2c1;
-    height: 600px;
-    width: 400px;
-    padding:10px ;
-   margin-left: 200px;
-   margin-top: 40px;
-}
-    
+    .register-from-container {
+
+        height: 600px;
+        width: 400px;
+        padding: 10px;
+        margin-left: 200px;
+        margin-top: 40px;
+    }
+
+    .input {
+        margin-left: 5px;
+    }
+
+    select {
+        margin-left: 5px;
+    }
+
+    .model {
+        margin-left: 200px;
+    }
+
+
 
 }
