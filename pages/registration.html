@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./../img/gymlogo.jpg" type="image/icon type">
   <link rel="stylesheet" href="./../css/registration.css">
   <link rel="stylesheet" href="./../css/style.css">
   <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
@@ -12,48 +13,46 @@
 </head>
 
 <body>
+  <!-- Container Start -->
   <div class="container">
     <!-- Header Start -->
-    <header class="navbar">
-      <div class="hamburger">
-        <img src="./../img/hamburger.png" alt="hamburger" onclick="openSidebar()" class="hamburger_size" />
-      </div>
-      <div class="logo_img">
-        <i class="fa-solid fa-dumbbell" style="color: #fef6e4; font-size: 40px; margin-top: 15px;"></i>
-      </div>
-      <div class="menu_list">
-        <a href="../index.html" class="menu_items">Home</a>
-        <a href="../pages/gallery.html" class="menu_items">Gallery</a>
-        <a href="../pages/package.html" class="menu_items">GYM Package</a>
-        <a href="../pages/bmi.html" class="menu_items">BIM Calculator</a>
-        <a href="../pages/testimonial.html" class="menu_items">Testimonial</a>
-        <a href="#" class="menu_items">Careers</a>
-        <a href="../pages/" class="menu_items">About Us</a>
-        <a href="#" class="menu_items">Registration</a>
-        <a href="../pages/contact.html" class="menu_items">Contact</a>
-      </div>
-      <div class="toggle_switch">
-        <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
-      </div>
-    </header>
+        <header class="navbar">
+            <div class="logo_img" onclick="window.location='./../index.html'">
+              <img src="./../img/gymlogo.jpg" alt="logo" class="logo"/>
+            </div>
+            <div class="toggle_switch">
+              <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
+            </div>
+            <div class="hamburger" onclick="menutoggle()">
+              <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
+            </div>
+            <div class="menu_list" id="menu_list">
+              <a href="../index.html" class="menu_items active">Home</a>
+              <a href="../pages/gallery.html" class="menu_items">Gallery</a>
+              <a href="../pages/package.html" class="menu_items">GYM Package</a>
+              <a href="../pages/bmi.html" class="menu_items">BIM Calculator</a>
+              <a href="../pages/testimonial.html" class="menu_items">Testimonial</a>
+              <a href="../pages/aboutus.html" class="menu_items">About Us</a>
+              <a href="#" class="menu_items">Registration</a>
+              <a href="../pages/Gym-franchise.html" class="menu_items">Franchise</a>
+              <a href="../pages/contact.html" class="menu_items">Contact</a>
+          </div>
+        </header>
     <!-- Header End -->
 
 
+    
     <!-- Wrapper Start -->
     <div class="wrapper">
       <!-- Curosal Start -->
-      <div class="main-curosal">
-        <div class="curosal_img" id="curosal_img">
-          <img src="./../img/home-curosal-img1.jpg" alt="home-curosal-img1" />
-        </div>
-        <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./../img/home-curosal-prev.png"
-            alt="homecurosalprev" /></div>
-        <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./../img/home-curosal-next.png"
-            alt="homecurosalnext" /></div>
-      </div>
+       <div class="main-curosal">
+          <div class="curosal_img" id="curosal_img">
+              <img src="./../img/home-curosal-img1.jpg"  alt="home-curosal-img1" />
+          </div>
+          <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./../img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
+          <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./../img/home-curosal-next.png"  alt="homecurosalnext" /></div>
+       </div>
       <!-- Curosal End -->
-    </div>
-    <!-- Wrapper End -->
 
        <h1 class="register-heading">Registration Form</h1>
        <p class="register-paragraph">Welcome to our gym registration from! Were excited to have you join our fitness <br> community. Please take a few moments to provide us with the required information so <br> that we can get you started on your fitness journey</p>
@@ -130,16 +129,16 @@
     </div>
 
 
-    <!-- Footer Start  -->
-    <footer>
-      <footer class="footer_section">
+     <!-- Footer Start  -->
+     <footer>
+      <div class="footer_section">
         <div class="footer-nav-links">
           <h3>Links</h3>
           <ul>
             <li><a href="../index.html" class="footer_text">Home</a></li>
-            <li><a href="" class="footer_text">About Us</a></li>
+            <li><a href="../pages/aboutus.html" class="footer_text">About Us</a></li>
             <li><a href="../pages/contact.html" class="footer_text">Contact</a></li>
-            <li><a href="" class="footer_text">Register</a></li>
+            <li><a href="#" class="footer_text">Register</a></li>
           </ul>
         </div>
         <div class="footer-nav-links">
@@ -149,7 +148,7 @@
             <li><a href="../pages/package.html" class="footer_text">Gym Package</a></li>
             <li><a href="../pages/bmi.html" class="footer_text">BIM Calculator</a></li>
             <li><a href="../pages/testimonial.html" class="footer_text">Testimonial</a></li>
-            <li><a href="" class="footer_text">Careers</a></li>
+            <li><a href="../pages/Gym-franchise.html" class="footer_text">Franchise</a></li>
           </ul>
         </div>
         <div class="footer-nav-links">
@@ -177,18 +176,26 @@
             </div>
           </div>
         </div>
-  </div>
-  <div class="footer-copyright-section">
-    <p>
-      Copyright © 2024 Gym Website. All rights reserved | Design by
-      ICP-9.0 Group 1
-    </p>
-  </div>
-
-  </footer>
-
+      </div>
+      <div class="footer-copyright-section">
+        <p>
+          Copyright © 2024 Gym Website. All rights reserved | Design by
+          ICP-9.0 Group 1
+        </p>
+      </div>
+    </footer>
+  <!-- Footer End -->
+</div>
+   
+<script type="text/javascript">
+  let page='registration';
+</script>
+    
   <script src="../js/common.js"></script>
 
   <script src="./../js/register.js"></script>
+
+
+
 </body>
 </html>

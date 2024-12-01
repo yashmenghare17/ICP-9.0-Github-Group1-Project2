@@ -14,15 +14,22 @@ body{
     background-color: #001858;
     display: flex;
 }
+.logo_img{
+    width: 35%;
+    cursor: pointer;
+}
 .logo{
     height: 60px;
     width: 60px;
     margin: 10px;
-    color: #fef6e4;
+    border-radius: 50%;
 }
 .menu_list{
-    margin-left: 160px;
-    margin-top: 28px;
+    width: 60%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
 }
 .menu_items{
     text-decoration: none;
@@ -33,12 +40,24 @@ body{
     cursor: pointer;;
 }
 .menu_items:hover{
-    color: #f582ae;
+    color:black;
+    background-color: white;
+    padding:10px 10px;
+    border-radius: 20px; 
+}
+.active{
+    color:black;
+    background-color: white;
+    padding:10px 10px;
+    border-radius: 20px; 
 }
 .toggle_switch{
-    margin-top: 14px;
-    margin-left: 80px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 5%;
 }
+
 .toggle_btn{
     height: 60px;
     width: 60px;
@@ -99,78 +118,9 @@ body{
 .footer-copyright-section{
     text-align: center;
 }
-
-/* Mobile Device */
-
-@media screen and (max-width: 500px){
-    /*navbar*/
-    .hamburger{
-       visibility: visible;
-    }
-    .hamburger_size{
-        height: 20px;
-        width: 20px;
-    }
-    .navbar{
-        background-color: #001858;
-        display: flex;
-        width: auto;
-    }
-    .menu_list{
-        display: none;
-    }
-    .toggle_switch{
-        margin-top: 35px;
-        margin-left: 300px;
-    }
-    .toggle_btn{
-        height: 45px;
-        width: 45px;
-    } 
-    /*background_img*/
-    .Banner{
-        position: relative;
-    }
-    .banner_text{
-        position: absolute;
-        top: 15%;
-        left: 20%;
-        color: #001858;
-    }
-}
-/*Tablet devices*/
-@media screen and (min-width: 501px) and (max-width : 992px){
-    /*navbar*/
-    .hamburger{
-        display: none;
-    }
-    .navbar{
-        background-color: #001858;
-        display: flex;
-    }
-    .menu_list{
-        margin-left: 20px;
-        margin-top: 28px;
-    }
-    .menu_items{
-        text-decoration: none;
-        margin-right: 10px;
-        font-size: 10px;
-        color: #fef6e4;
-        font-weight: bold;
-        cursor: pointer;;
-    }
-    .menu_items:hover{
-        color: #8bd3dd;
-    }
-    .toggle_switch{
-        margin-top: 28px;
-        margin-left: 10px;
-    }
-    .toggle_btn{
-        height: 40px;
-        width: 40px;
-    }
+.footer-nav-links ul li {
+    margin-bottom: 10px;
+    margin-left: -22px;
 }
 .main-curosal{
     width: 100%;
@@ -179,6 +129,7 @@ body{
 .curosal_img img {
     width:100%;
      height:600px;
+     object-fit: cover;
 }
 .preq_cuorsal{
     position: absolute;
@@ -198,4 +149,185 @@ body{
 .next_cuorsal img{
     height: 70px;
    
+}
+
+/* Mobile Device */
+
+@media screen and (max-width: 500px){
+    /*navbar*/
+    .container{
+        position: relative;
+    }
+    .hamburger{
+       display: flex;
+       width: 5%;
+       justify-content: right;
+       align-items: center;
+       padding-right: 15px;
+    }
+    .hamburger_size{
+        height: 20px;
+        width: 20px;
+    }
+    .navbar{
+        background-color: #001858;
+        display: flex;
+        width: auto;
+    }
+    .menu_list{
+        display: none;
+        position: absolute;
+        right: 0%;
+        z-index: 99999;
+        width: 40%;
+        top: 1.25%;
+        background-color: inherit;
+        padding:5px 10px;
+    }
+   .menu_items{
+    margin-right: 0px;
+    display: block;
+    font-size: 12px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+   }
+   .active  {
+    padding:10px 15px;
+   }
+   .menu_items:hover{
+    padding:10px 15px;
+   }
+    .toggle_switch{
+        width: 60%;
+        padding-right: 25px;
+        justify-content: right;
+    }
+    .toggle_btn{
+        height: 45px;
+        width: 45px;
+    } 
+    .curosal_img img {
+        width:100%;
+        height:400px;
+        object-fit: cover;
+    }
+    .preq_cuorsal img{
+        height: 40px;
+       
+    }
+    .next_cuorsal img{
+        height: 40px;
+       
+    }
+    /*background_img*/
+    .Banner{
+        position: relative;
+    }
+    .banner_text{
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        color: #001858;
+    }
+}
+/*Tablet devices*/
+@media screen and (min-width: 501px) and (max-width : 992px){
+    .container{
+        position: relative;
+    }
+    .hamburger{
+       display: flex;
+       width: 5%;
+       justify-content: right;
+       align-items: center;
+       padding-right: 15px;
+    }
+    .hamburger_size{
+        height: 20px;
+        width: 20px;
+    }
+    .navbar{
+        background-color: #001858;
+        display: flex;
+        width: auto;
+    }
+    .menu_list{
+        display: none;
+        position: absolute;
+        right: 0%;
+        z-index: 99999;
+        width: 40%;
+        top: 1.7%;
+        background-color: inherit;
+        padding:5px 10px;
+    }
+   .menu_items{
+    margin-right: 0px;
+    display: block;
+    font-size: 12px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+   }
+   .active  {
+    padding:10px 15px;
+   }
+   .menu_items:hover{
+    padding:10px 15px;
+   }
+    .toggle_switch{
+        width: 60%;
+        padding-right: 25px;
+        justify-content: right;
+    }
+    .toggle_btn{
+        height: 45px;
+        width: 45px;
+    } 
+    .curosal_img img {
+        width:100%;
+        height:400px;
+        object-fit: cover;
+    }
+    .preq_cuorsal img{
+        height: 50px;
+       
+    }
+    .next_cuorsal img{
+        height: 50px;
+       
+    }
+    /*background_img*/
+    .Banner{
+        position: relative;
+    }
+    .banner_text{
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        color: #001858;
+    }
+}
+@media screen and (min-width: 993px) and (max-width : 1204px){
+    .logo_img{
+        width: 13%;
+    }
+    .menu_list{
+        width: 85%;
+    }
+    .toggle_switch{
+        width: 2%;
+    }
+
+}
+@media screen and (min-width: 1205px) and (max-width : 1280px){
+    .logo_img{
+        width: 20%;
+    }
+    .menu_list{
+        width: 70%;
+    }
+    .toggle_switch{
+        width: 10%;
+    }
+
 }

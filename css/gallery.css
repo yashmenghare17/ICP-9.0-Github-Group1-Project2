@@ -18,7 +18,7 @@ body{
     height: 60px;
     width: 60px;
     margin: 10px;
-    color: #fef6e4;
+    border-radius: 50%;
 }
 .menu_list{
     margin-left: 160px;
@@ -45,37 +45,7 @@ body{
 }
 /*navbar ended here*/
 
-/*background_img*/
-.banner_img{
-    height: 100vh;
-    width: 100%;
-}
-.Banner{
-    position: relative;
-}
-.banner_text{
-    position: absolute;
-    top: 55%;
-    left: 40%;
-    color: #001858;
-}
-.btn{
-    height: 40px;
-    width: 100px;
-    background-color: transparent;
-    margin-left: 120px;
-    border: 2px solid #001858;
-    margin-top: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: #001858;
-    color: #f582ae;
-    transform: scale(1.1);
-    box-shadow: 0px 0px 1px 3px #001858;
-    transition: 0.3s;
-}
+/*gallery box*/
 .gallery_container{
     width: 70%;
     margin-left: 180px;
@@ -128,6 +98,42 @@ body{
 .footer-copyright-section{
     text-align: center;
 }
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.model{
+    background-color: #fef6e4;
+    height: 550px;
+    width: 700px;
+    padding: 15px;
+    position: fixed;
+}
+.close{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.model_img{
+    height: 350px;
+    width: 700px;
+    margin-top: 30px;
+}
+.modelbox_text{
+    text-align: center;
+    color: #001858;
+}
 
 /* Mobile Device */
 
@@ -156,6 +162,7 @@ body{
         height: 45px;
         width: 45px;
     } 
+    
     /*background_img*/
     .Banner{
         position: relative;
@@ -166,6 +173,29 @@ body{
         left: 20%;
         color: #001858;
     }
+    /*gallery box*/
+.gallery_container{
+    width: 70%;
+    margin-left: 50px;
+    padding: 20px;
+    display: block;
+    flex-wrap: wrap;
+}
+.gallery_box{
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.gallery_box:hover{
+    transform: scale(0.9);
+}
+.gallery_text{
+    text-align: center;
+    font-size: 40px;
+    color: #001858;
+    font-weight: bold;
+}
 }
 /*Tablet devices*/
 @media screen and (min-width: 501px) and (max-width : 992px){

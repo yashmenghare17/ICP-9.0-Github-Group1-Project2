@@ -1,3 +1,4 @@
+
  function openModel()
   {
     const name = document.getElementById('name').value;
@@ -36,7 +37,9 @@
 function okButton()
 {
     document.getElementById('overlay').style.display = 'none';
+}
     
 
-}
+
+
 

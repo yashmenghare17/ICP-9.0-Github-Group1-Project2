@@ -183,10 +183,7 @@ select {
 
 /* Mobile device */
 @media only screen and (max-width: 500px) {
-    .curosal_img {
-        width: 500px;
-        height: 630px;
-    }
+    
     .parent-container
     {
         width: 300px;
