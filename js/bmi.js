@@ -12,24 +12,24 @@ function calculateBMI() {
     const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
 
     let category = "";
-    let imageUrl = "";
+    let imgSrc = "";
 
     if (bmi < 18.5) {
         category = "Underweight";
-        imageUrl = "./../img/underweight.jpg";
+        imgSrc = "../img/underweight.jpg";
     } else if (bmi >= 18.5 && bmi < 24.9) {
         category = "Normal weight";
-        imageUrl = "./../img/normal.jpg";
+        imgSrc = "../img/normal.avif";
     } else if (bmi >= 25 && bmi < 29.9) {
         category = "Overweight";
-        imageUrl = "./../img/overweight.jpg";
+        imgSrc = "../img/overweight.avif";
     } else {
         category = "Obese";
-        imageUrl = "./../img/obese.jpg";
+        imgSrc = "../img/obese.jpg";
     }
 
     document.getElementById('result').innerText = `Your BMI is ${bmi} (${category}).`;
     const bmiImage = document.getElementById('bmiImage');
-    bmiImage.src = imageUrl;
+    bmiImage.src = imgSrc;
     bmiImage.style.display = "block";
 }
