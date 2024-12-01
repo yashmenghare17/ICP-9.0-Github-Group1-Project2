@@ -62,6 +62,13 @@ body {
     width: 900px;
     margin-top: 20px;
 }
+#bmiImage {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
 .result {
     color: #fef6e4;
     margin-top: 20px;
