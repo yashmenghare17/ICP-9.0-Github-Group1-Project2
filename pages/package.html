@@ -109,16 +109,16 @@
 
             <input type="text" placeholder="Enter Message" class="message-box" required /> <br> <br>
 
-            <button type="button" class="submit-btn"> SUBMIT </button>
+            <button type="button" class="submit-btn" onclick="openModel()"> SUBMIT </button>
         </div>
     </div>
 
     <div class="overlay" id="overlay">
         <div class="model">      
-            <img src="./../img/close-window.png" alt="close" class="close-icon" id="close"> 
+            <img src="./../img/close-window.png" alt="close" class="close-icon" id="close" onclick="closeModel()"> 
             <h2 class="model-heading"> Thank You! </h2>            
             <p class="dialog-paragraph" > Your details has been successfully submitted.Thanks! </p>
-            <button type="button" class="ok-btn"> Ok </button> 
+            <button type="button" class="ok-btn" onclick="okButton()"> Ok </button> 
         </div>
     </div>
     <!--Form End-->
