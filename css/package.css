@@ -118,3 +118,7 @@
     font-size: 15px;
     margin-left: 150px;
 }
+
+.ok-btn:hover{
+    background-color: #ff4500;
+}
