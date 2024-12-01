@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IronPlus Gym - Home</title>
+    <title>GYM - Home</title>
+    <link rel="icon" href="./img/gymlogo.jpg" type="image/icon type">
     <link href="./css/style.css" type="text/css" rel="stylesheet" />
     <link href="./css/home.css" type="text/css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
@@ -13,26 +14,26 @@
         <div class="container">
             <!-- Header Start -->
                 <header class="navbar">
-                    <div class="hamburger">
-                        <img src="./img/hamburger.png" alt="hamburger" class="hamburger_size" />
-                    </div>
-                    <div class="logo_img">
-                    <i class="fa-solid fa-dumbbell" style="color: #fef6e4; font-size: 40px; margin-top: 15px;"></i>
-                    </div>
-                    <div class="menu_list">
-                        <a href="#" class="menu_items">Home</a>
-                        <a href="#" class="menu_items">Gallery</a>
-                        <a href="#" class="menu_items">GYM Package</a>
-                        <a href="#" class="menu_items">BIM Calculator</a>
-                        <a href="#" class="menu_items">Testimonial</a>
-                        <a href="#" class="menu_items">Careers</a>
-                        <a href="#" class="menu_items">About Us</a>
-                        <a href="#" class="menu_items">Registration</a>
-                        <a href="#" class="menu_items">Contact</a>
+                    <div class="logo_img" onclick="window.location='index.html'">
+                      <img src="./img/gymlogo.jpg" alt="logo" class="logo"/>
                     </div>
                     <div class="toggle_switch">
-                        <img src="./img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
+                      <img src="./img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
                     </div>
+                    <div class="hamburger" onclick="menutoggle()">
+                      <img src="./img/hamburger.png" alt="hamburger" class="hamburger_size" />
+                    </div>
+                    <div class="menu_list" id="menu_list">
+                      <a href="#" class="menu_items active">Home</a>
+                      <a href="./pages/gallery.html" class="menu_items">Gallery</a>
+                      <a href="./pages/package.html" class="menu_items">GYM Package</a>
+                      <a href="./pages/bmi.html" class="menu_items">BIM Calculator</a>
+                      <a href="./pages/testimonial.html" class="menu_items">Testimonial</a>
+                      <a href="./pages/aboutus.html" class="menu_items">About Us</a>
+                      <a href="./pages/registration.html" class="menu_items">Registration</a>
+                      <a href="./pages/Gym-franchise.html" class="menu_items">Franchise</a>
+                      <a href="./pages/contact.html" class="menu_items">Contact</a>
+                  </div>
                 </header>
             <!-- Header End -->
             <!-- Wrapper Start -->
@@ -45,7 +46,139 @@
                         <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
                         <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./img/home-curosal-next.png"  alt="homecurosalnext" /></div>
                      </div>
-                      <!-- Curosal End -->
+                    <!-- Curosal End -->
+                    <!-- section 1 start -->
+                    <div class="contentsectiondiv">
+                      <h2>What Makes Us</h2>
+                      <h2>Different Than Others</h2>
+                      <div class="diff_div">
+                        <div class="diff_card" id="card_data_1" onclick="showCards('card_data_1')">
+                            <img src="./img/gym.jpg" alt="img1" />
+                            <p><b>156 Gyms</b></p>
+                        </div>
+                        <div class="diff_card" id="card_data_2" onclick="showCards('card_data_2')">
+                          <img src="./img/city.jpg" alt="img1"/>
+                          <p><b>95 Cities</b></p>
+                        </div>
+                        <div class="diff_card" id="card_data_3" onclick="showCards('card_data_3')">
+                          <img src="./img/state.jpg" alt="img1"/>
+                          <p><b>26 States</b></p>
+                        </div>
+                        <div class="diff_card" id="card_data_4" onclick="showCards('card_data_4')">
+                          <img src="./img/PersonalTrainingProgram.jpg" alt="img1"/>
+                          <p><b>Personal Training Program</b></p>
+                        </div>
+                      <div class="diff_card" id="card_data_5" onclick="showCards('card_data_5')">
+                        <img src="./img/group-img.jpg" alt="img1"/>
+                        <p><b> Group Exercise Program</b></p>
+                      </div>
+                      <div class="diff_card"id="card_data_6" onclick="showCards('card_data_6')">
+                        <img src="./img/Domestic&InternationalTravelPass.jpg" alt="img1"/>
+                        <p><b>Domestic & International Travel Pass</b></p>
+                      </div>
+                    </div>
+                </div>
+                <!-- section 1 end -->
+                <!-- section 2 start -->
+                  <div class="contentsectiondiv">
+                    <h2>Our Legacy</h2>
+                    <div class="conentsectiondivcard">
+                        <div class="rightmarginimgdiv iframediv">
+                          <iframe width="400" height="200" src="https://www.youtube.com/embed/IwFPIfrwaII?si=kl17LxvGWtP2JBd3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <p>
+                              Gold's Gym is a globally renowned fitness brand that has made its mark in India. With a strong legacy dating back to 1965 in Venice Beach, California, Gold's Gym has become synonymous with fitness excellence and innovation. Gold’s Gym India carries the legacy ahead in the home country since its inception in 2002. World-class fitness facilities and a comprehensive range of workout programs tailored to meet the needs of diverse fitness enthusiasts is what sets us apart from others.
+                              Gold's Gym India, a part of this esteemed legacy, has expanded its presence across various cities, aiming to empower individuals to achieve their fitness goals, regardless of their fitness levels or aspirations. It's a fitness haven that combines state-of-the-art equipment, expert trainers, and a supportive community to foster a holistic approach to wellness.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- section 2 end -->
+                  <!-- section 3 start -->
+                  <div class="contentsectiondiv">
+                    <h2>Our Programs</h2>
+                    <div class="conentsectiondivcard">
+                        <div>
+                            <p>
+                              The diverse range of programs, from group exercises, corporate training to personalized training, caters to varying fitness levels and goals. Members get variety and the option of customization as each gym offers a diversity of exercise options and specialized programs, allowing members to choose activities that align with their interests and fitness objectives. Personalized training programs ensure workouts are tailored to individual needs, maximizing results. Participating in group exercises fosters a sense of community among members, providing social support and encouragement, which can be instrumental in maintaining consistency in their fitness journey.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section3contentcard">
+                      <div class="rightmarginimgdiv" >
+                        <img src="./img/membership.jpg"/>
+                      </div>
+                      <div>
+                          <h3>Corporate Membership</h3>
+                          <p>
+                            Don’t have time to go to the gym? We get the gym to you. Gold's Gym India offers corporate membership programs tailored for companies looking to promote employee wellness and fitness. These programs are designed to encourage a healthier workforce by providing BMI screening, diet and nutrition counselling, fitness activities and seminars for building a healthier lifestyle.
+                          </p>
+                      </div>
+                    </div>
+                    <div class="section3contentcard">
+                        <div>
+                          <h3>Personal Training</h3>
+                          <p >
+                            Gold's Gym India is known for the competent personal trainers and extraordinary personal training offered by them. The individuals seeking for serious goal-oriented fitness, personalized guidance, motivation, and specialized workout plans, Gold’s Gym India personal training program is for them.
+                          </p>
+                        </div>
+                        <div class="leftmarginimgdiv">
+                          <img src="./img/PersonalTrainingProgram.jpg"/>
+                        </div>
+                    </div>
+                    <div class="section3contentcard">
+                      <div class="rightmarginimgdiv">
+                        <img src="./img/group-img.jpg"/>
+                      </div>
+                      <div>
+                          <h3>Group Program</h3>
+                          <p >
+                            Gold's Gym India provides a variety of group fitness programs such as dance fitness, yoga, HIIT, and much more tailored to cater to diverse fitness preferences and goals. These group programs offer a supportive environment and a sense of community while engaging participants in fun and effective workouts.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- section 3 end -->
+                  <!-- section 4 start -->
+                  <div class="contentsectiondiv">
+                    <h2>Our Achivements</h2>
+                    <div class="diff_div">
+                      <div class="diff_card" style="height: 100px;"  id="card_data_1">
+                          <p><b>Total GYM</b></p>
+                          <p id="gym_count"><b>0</b></p>
+                      </div>
+                      <div class="diff_card" style="height: 100px;"  id="card_data_2">
+                        <p><b>Total Cities</b></p>
+                        <p id="city_count"><b>0</b></p>
+                      </div>
+                      <div class="diff_card" style="height: 100px;"  id="card_data_3">
+                        <p><b>Total States</b></p>
+                        <p id="state_count"><b>0</b></p>
+                      </div>
+                      <div class="diff_card" style="height: 100px;"  id="card_data_4">
+                        <p><b>Total Trainers</b></p>
+                        <p id="trainer_count"><b>0</b></p>
+                      </div>
+                      <div class="diff_card" style="height: 100px;"  id="card_data_5">
+                        <p><b>Total Happy Customers </b></p>
+                        <p id="customer_count"><b>0</b></p>
+                      </div>
+                      <div class="diff_card" style="height: 100px;" id="card_data_6">
+                        <p><b>Total Onboarding Customers</b></p>
+                        <p id="onboarding_count"><b>0</b></p>
+                      </div>
+                  </div>
+                  </div>
+                  <!-- section 4 end -->
+                  <div class="overlay" id="overlay">
+                    <div class="model">
+                        <img src="./img/home-curosal-img1.jpg" alt="img1"  id="modal_img" />
+                        <h2 class="model-heading" id="modal_heading"></h2>
+                        <button type="button" onclick="okButton()" class="ok-btn">Ok</button>
+                    </div>
+                  </div>
+                  
                 </div>
             <!-- Wrapper End -->
             <!-- Footer Start  -->
@@ -54,20 +187,20 @@
                   <div class="footer-nav-links">
                     <h3>Links</h3>
                     <ul>
-                      <li><a href="" class="footer_text">Home</a></li>
-                      <li><a href="" class="footer_text">About Us</a></li>
-                      <li><a href="" class="footer_text">Contact</a></li>
-                      <li><a href="" class="footer_text">Register</a></li>
+                      <li><a href="#" class="footer_text">Home</a></li>
+                      <li><a href="./pages/aboutus.html" class="footer_text">About Us</a></li>
+                      <li><a href="./pages/contact.html" class="footer_text">Contact</a></li>
+                      <li><a href="./pages/registration.html" class="footer_text">Register</a></li>
                     </ul>
                   </div>
                   <div class="footer-nav-links">
                     <h3>Important Links</h3>
                     <ul>
-                      <li><a href="" class="footer_text">Gallery</a></li>
-                      <li><a href="" class="footer_text">Gym Package</a></li>
-                      <li><a href="" class="footer_text">BIM Calculator</a></li>
+                      <li><a href="./pages/gallery.html" class="footer_text">Gallery</a></li>
+                      <li><a href="./pages/package.html" class="footer_text">Gym Package</a></li>
+                      <li><a href="./pages/bmi.html" class="footer_text">BIM Calculator</a></li>
                       <li><a href="./pages/testimonial.html" class="footer_text">Testimonial</a></li>
-                      <li><a href="" class="footer_text">Careers</a></li>
+                      <li><a href="./pages/Gym-franchise.html" class="footer_text">Franchise</a></li>
                     </ul>
                   </div>
                   <div class="footer-nav-links">
@@ -107,7 +240,11 @@
         </div>
     <!-- Container End -->
     <!-- Script Start -->
+     <script>
+      var page = 'index';
+     </script>
      <script type="text/javascript" src="./js/common.js"></script>
+     <script type="text/javascript" src="./js/home.js"></script>
     <!-- Script End -->
 </body>
 </html>

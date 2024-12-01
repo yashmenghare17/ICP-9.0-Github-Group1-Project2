@@ -19,8 +19,28 @@ function prevNext(type) {
       count = 0;
     }
   }
-  curosal_data.innerHTML = `<img src="../img/${curosalImgArray[count]}.jpg"  alt="${curosalImgArray[count]}" />`;
+  if(page!='index'){
+    curosal_data.innerHTML = `<img src="../img/${curosalImgArray[count]}.jpg"  alt="${curosalImgArray[count]}" />`;
+  }else{
+    curosal_data.innerHTML = `<img src="./img/${curosalImgArray[count]}.jpg"  alt="${curosalImgArray[count]}" />`;
+  }
+  
 }
 setInterval(function () {
   prevNext("Next");
-}, 5000);
+}, 6000);
+function toggle(type){
+  if(type=='On'){
+    document.getElementsByTagName('');
+  }else{
+
+  }
+}
+function menutoggle(){
+  let menu_list = document.getElementById('menu_list');
+  if(menu_list.style.display=='block'){
+    menu_list.style.display='none';
+  }else{
+    menu_list.style.display='block';
+  }
+}
