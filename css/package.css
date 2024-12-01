@@ -122,3 +122,11 @@
 .ok-btn:hover{
     background-color: #ff4500;
 }
+
+.close-icon{
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
