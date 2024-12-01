@@ -100,7 +100,7 @@ body {
 /* Arrow Navigation */
 .left-arrow,
 .right-arrow {
-  height: 45px;
+  height: 55px;
   position: absolute;
   top: 200px;
 }
@@ -396,15 +396,15 @@ body {
 
   .left-arrow,
   .right-arrow {
-    height: 35px;
-    top: 220px;
+    height: 55px;
+    top: 200px;
   }
 
   .left-arrow {
-    left: 10px;
+    left: 150px;
   }
 
   .right-arrow {
-    right: 10px;
+    right: 150px;
   }
 }
