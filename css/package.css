@@ -194,3 +194,54 @@
         width: 300px;
     }
 }
+
+
+/*Tablet device*/
+@media screen and (min-width: 501px) and (max-width : 992px) 
+{
+    .content-container{
+        margin-left: 90px;
+        height: 450px;
+        width: 800px;
+    }
+
+    .trial-img{
+        height: 400px;
+        width: 990px;
+        margin-bottom: 20px;
+    }
+
+    .trial-text{
+        margin-top: -330px;
+        width: 350px;
+    }
+
+    .form-container{
+        width: 500px;
+        padding: 10px;
+        margin-left: 250px;
+    }
+
+    .input-box{
+        margin-left: 10px;
+        width: 400px;
+    }
+
+    .select-box{
+        margin-left: 10px;
+        width: 410px;
+    }
+
+    .message-box{
+        margin-left: 10px;
+        width: 400px;
+    }
+
+    .model{
+        margin-left: 15px;
+    }
+
+    .submit-btn{
+        width: 400px;
+    }
+}
