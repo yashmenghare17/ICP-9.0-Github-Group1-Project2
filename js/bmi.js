@@ -33,3 +33,24 @@ function calculateBMI() {
     bmiImage.src = imgSrc;
     bmiImage.style.display = "block";
 }
+
+
+ // JavaScript to handle tab switching
+const benefitItems = document.querySelectorAll(".benefit-item");
+const highlightBoxes = document.querySelectorAll(".highlight-box");
+
+// Add click event to each benefit item
+benefitItems.forEach(item => {
+    item.addEventListener("click", () => {
+        // Remove active classes from all benefit items
+        benefitItems.forEach(i => i.classList.remove("active"));
+        highlightBoxes.forEach(box => box.classList.remove("active"));
+
+        // Add active class to clicked item
+        item.classList.add("active");
+
+        // Show the corresponding highlight box
+        const tab = item.getAttribute("data-tab");
+        document.getElementById(tab).classList.add("active");
+    });
+});

@@ -75,3 +75,98 @@ body {
     font-size: 1.2rem;
     text-align: center;
 }
+.bmi-benefits {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff8f0;
+}
+
+.bmi-benefits h2 {
+    color: #22305c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bmi-benefits p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    background-color: #ffffff;
+    border: 2px solid #f0e4d8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    border-color: #d9773e;
+    transform: scale(1.05);
+}
+
+.benefit-item.active {
+    border-color: #d9773e;
+    background-color: #fde7dc;
+}
+
+.benefit-item i {
+    font-size: 30px;
+    color: #d9773e;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    color: #333;
+    font-size: 14px;
+    margin: 0;
+}
+.intr1{
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.highlight-box {
+    display: none;
+    background-color: #fde7dc;
+    border-left: 5px solid #d9773e;
+    padding: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.highlight-box.active {
+    display: block;
+}
+
+.slideshow-btn {
+    margin-top: 15px;
+    background-color: #d9773e;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.slideshow-btn:hover {
+    background-color: #b55d2b;
+}
+
