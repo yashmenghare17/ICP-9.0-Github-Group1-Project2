@@ -142,3 +142,55 @@
     top: 10px;
     cursor: pointer;
 }
+
+
+/* Mobile device */
+@media only screen and (max-width: 500px) 
+{
+    .content-container{
+        margin-left: 27px;
+        height: 630px;
+        width: 400px;
+    }
+
+    .trial-img{
+        height: 300px;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .trial-text{
+        margin-top: -250px;
+        width: 200px;
+    }
+
+    .form-container{
+        height: 600px;
+        width: 400px;
+        padding: 10px;
+        margin-left: 20px;
+    }
+
+    .input-box{
+        margin-left: 5px;
+        width: 300px;
+    }
+
+    .select-box{
+        margin-left: 5px;
+        width: 310px;
+    }
+
+    .message-box{
+        margin-left: 5px;
+        width: 300px;
+    }
+
+    .model{
+        margin-left: 15px;
+    }
+
+    .submit-btn{
+        width: 300px;
+    }
+}
