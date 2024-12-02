@@ -210,9 +210,9 @@ select {
     }
 
     .register-from-container {
-        width: 100%;
-        padding: 10px;
-        margin: 10px auto;
+        width: 93%;
+        padding: 5px;
+        margin: 10px;
     }
 
     .page-heading {
@@ -225,8 +225,13 @@ select {
         text-align: center;
     }
 
-    .input, select {
+    .input {
         width: 90%;
+        margin-left: 0;
+        padding: 8px;
+    }
+    select {
+        width: 95%;
         margin-left: 0;
         padding: 8px;
     }
