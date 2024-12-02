@@ -193,10 +193,10 @@
 @media screen and (max-width: 500px) 
 {
     .content-container{
-        width: 90%;
+        width: 100%;
         margin-left: 20px;
         padding: 10px;
-        height: 580px; 
+        height: auto; 
     }
 
     .trial-img{
@@ -210,13 +210,31 @@
     }
 
     .form-container{
-        width: 90%;
+        width: 100%;
         margin-left: 5%;
         padding: 15px;
     }
 
+    .input-box{
+        height: auto;
+        width: 80%;
+        padding: 5px auto;
+    }
+    
+    .select-box{
+        height: auto;
+        width: 80%;
+        padding: 5px auto;
+    }
+
+    .message-box{
+        height: auto;
+        width: 80%;
+        padding: 10px auto;
+    }
+
     .submit-btn{
-        width: 90%;
+        width: 80%;
         font-size: 14px;  
         margin-bottom: 12px;
         height: 40px;  
@@ -238,7 +256,7 @@
         font-size: 14px; 
         margin: 10px auto; 
         display: block;
-        width: 80%; 
+        width: 100%; 
     }
 
     .membership-container{
@@ -254,7 +272,7 @@
 
     .membership-img{
         height: auto; 
-        width: 90%; 
+        width: 100%; 
         margin-left: 0;
         margin-top: 20px;
     }
@@ -263,7 +281,7 @@
         padding: 10px;
         font-size: 14px;
         margin-top: 10px;
-        width: 80%;
+        width: 100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
