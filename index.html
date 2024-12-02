@@ -11,14 +11,15 @@
 </head>
 <body>
     <!-- Container Start -->
-        <div class="container">
+        <div class="container" id="container">
             <!-- Header Start -->
                 <header class="navbar">
                     <div class="logo_img" onclick="window.location='index.html'">
                       <img src="./img/gymlogo.jpg" alt="logo" class="logo"/>
                     </div>
-                    <div class="toggle_switch">
-                      <img src="./img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
+                    <div class="toggle_switch" onclick="toggle()">
+                      <img src="./img/toggle_light.png" alt="toggle_light" id="toggle_light" class="toggle_btn" />
+                      <img src="./img/toggle_dark.png" alt="toggle_light" class="toggle_btn"  id="toggle_dark" style="display: none;" />
                     </div>
                     <div class="hamburger" onclick="menutoggle()">
                       <img src="./img/hamburger.png" alt="hamburger" class="hamburger_size" />
@@ -37,7 +38,7 @@
                 </header>
             <!-- Header End -->
             <!-- Wrapper Start -->
-                <div class="wrapper">
+                <div class="wrapper" id="wrapper">
                     <!-- Curosal Start -->
                      <div class="main-curosal">
                         <div class="curosal_img" id="curosal_img">
@@ -51,7 +52,7 @@
                     <div class="contentsectiondiv">
                       <h2>What Makes Us</h2>
                       <h2>Different Than Others</h2>
-                      <div class="diff_div">
+                      <div class="diff_div" id="diff_div_1">
                         <div class="diff_card" id="card_data_1" onclick="showCards('card_data_1')">
                             <img src="./img/gym.jpg" alt="img1" />
                             <p><b>156 Gyms</b></p>
@@ -143,7 +144,7 @@
                   <!-- section 4 start -->
                   <div class="contentsectiondiv">
                     <h2>Our Achivements</h2>
-                    <div class="diff_div">
+                    <div class="diff_div" id="diff_div_2">
                       <div class="diff_card" style="height: 100px;"  id="card_data_1">
                           <p><b>Total GYM</b></p>
                           <p id="gym_count"><b>0</b></p>
@@ -172,7 +173,7 @@
                   </div>
                   <!-- section 4 end -->
                   <div class="overlay" id="overlay">
-                    <div class="model">
+                    <div class="model" id="model">
                         <img src="./img/home-curosal-img1.jpg" alt="img1"  id="modal_img" />
                         <h2 class="model-heading" id="modal_heading"></h2>
                         <button type="button" onclick="okButton()" class="ok-btn">Ok</button>
@@ -182,7 +183,7 @@
                 </div>
             <!-- Wrapper End -->
             <!-- Footer Start  -->
-            <footer>
+            <footer id="footer_section">
                 <div class="footer_section">
                   <div class="footer-nav-links">
                     <h3>Links</h3>
@@ -229,7 +230,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="footer-copyright-section">
+                <div class="footer-copyright-section" id="footer-copyright-section">
                   <p>
                     Copyright © 2024 Gym Website. All rights reserved | Design by
                     ICP-9.0 Group 1
