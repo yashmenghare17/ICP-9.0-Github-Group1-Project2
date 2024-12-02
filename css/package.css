@@ -4,10 +4,22 @@
     font-family: "Parkinsans", sans-serif;
 }
 
+.content-container{
+    background-color: #fff;
+    padding: 5px 15px;
+    width: 900px;
+    margin-left: 300px;
+    margin-top: 30px;
+    height: 400px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px 10px #e2e2e0dc;
+    color: #393938e8;
+}
+
 .trial-img{
     height: 400px;
     width: 1519px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .trial-text{
@@ -22,35 +34,214 @@
 .form-text{
     font-size: 25px;
     text-align: center;
-    color: rgb(6, 6, 143);
+    color: #fff;
 }
 
 .form-container{
+    background-color: #001858;
+    padding: 5px 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 530px;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.form{
     text-align: center;
 }
 
 .input-box{
     height: 30px;
-    width: 500px;
-    font-size: 16px;
+    width: 400px;
+    font-size: 15px;
     border-radius: 10px;
     padding: 5px 5px;
 }
 
+.select-box{
+    height: 40px;
+    width: 410px;
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-size: 15px;
+}
+
 .message-box{
     height: 30px;
-    width: 500px;
+    width: 400px;
     font-size: 16px;
     border-radius: 10px;
     padding: 10px 5px;
 }
 
 .submit-btn{
-    width: 500px;
+    width: 400px;
     border-radius: 20px;
     height: 45px;
     font-size: 18px;
-    background-color: #0733ae;
+    background-color: #ff6347;
     color: white;
-    border: 1px solid #577de8;
+    border: 1px solid #fc694f;
+    margin-bottom: 15px;
+}
+
+.submit-btn:hover{
+    background-color: #ff4500;
+    cursor: pointer;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.model{
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.model-heading{
+    font-size: 20px;
+    color:#172c66 ;
+    margin-left: 140px;
+}
+
+.dialog-paragraph{
+    font-size: 15px;
+    color: #172c66;
+}
+
+.ok-btn{
+    background-color:  #ff6347 ;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: 150px;
+}
+
+.ok-btn:hover{
+    background-color: #ff4500;
+}
+
+.close-icon{
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+/* Mobile device */
+@media only screen and (max-width: 500px) 
+{
+    .content-container{
+        margin-left: 27px;
+        height: 630px;
+        width: 400px;
+    }
+
+    .trial-img{
+        height: 300px;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+
+    .trial-text{
+        margin-top: -250px;
+        width: 200px;
+    }
+
+    .form-container{
+        height: 600px;
+        width: 400px;
+        padding: 10px;
+        margin-left: 20px;
+    }
+
+    .input-box{
+        margin-left: 5px;
+        width: 300px;
+    }
+
+    .select-box{
+        margin-left: 5px;
+        width: 310px;
+    }
+
+    .message-box{
+        margin-left: 5px;
+        width: 300px;
+    }
+
+    .model{
+        margin-left: 15px;
+    }
+
+    .submit-btn{
+        width: 300px;
+    }
+}
+
+
+/*Tablet device*/
+@media screen and (min-width: 501px) and (max-width : 992px) 
+{
+    .content-container{
+        margin-left: 90px;
+        height: 450px;
+        width: 800px;
+    }
+
+    .trial-img{
+        height: 400px;
+        width: 990px;
+        margin-bottom: 20px;
+    }
+
+    .trial-text{
+        margin-top: -330px;
+        width: 350px;
+    }
+
+    .form-container{
+        width: 500px;
+        padding: 10px;
+        margin-left: 250px;
+    }
+
+    .input-box{
+        margin-left: 10px;
+        width: 400px;
+    }
+
+    .select-box{
+        margin-left: 10px;
+        width: 410px;
+    }
+
+    .message-box{
+        margin-left: 10px;
+        width: 400px;
+    }
+
+    .model{
+        margin-left: 15px;
+    }
+
+    .submit-btn{
+        width: 400px;
+    }
 }
