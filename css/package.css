@@ -226,6 +226,48 @@
     .model-heading{
         margin-left: 130px;
     }
+
+    .membership-text{
+        margin-top: 20px;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .membership-btn{        
+        padding: 10px;        
+        font-size: 14px; 
+        margin: 10px auto; 
+        display: block;
+        width: 80%; 
+    }
+
+    .membership-container{
+        margin-left: 0; 
+        padding: 0 10px; 
+    }
+
+    .membership-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .membership-img{
+        height: auto; 
+        width: 90%; 
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .buy-btn{
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 10px;
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
