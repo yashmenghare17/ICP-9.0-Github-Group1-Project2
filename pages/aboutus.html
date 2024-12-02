@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about us</title>
+    <title>GYM-About Us</title>
+    <link href="./../css/style.css" type="text/css" rel="stylesheet" />
     <link href="./../css/aboutus.css" type="text/css" rel="stylesheet" />
- <link href="./../css/style.css" type="text/css" rel="stylesheet" />
- <script src="./../js/about.js"></script>
+    <script src="./../js/about.js"></script>
     <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
   <div class="container">
-    <!--Navbar section-->
-    <div class="navbar">
-      <div class="hamburger">
-        <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
+    <!-- Header STart -->
+    <header class="navbar">
+      <div class="logo_img" onclick="window.location='index.html'">
+        <img src="../img/gymlogo.jpg" alt="logo" class="logo"/>
       </div>
-      <div class="logo_img">
-        <img src="./../img/gymlogo.jpg" alt="logo" class="logo"/>
-       
+      <div class="toggle_switch">
+        <img src="../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
       </div>
-      <div class="menu_list">
-        <a href="./../index.html" class="menu_items">Home</a>
+      <div class="hamburger" onclick="menutoggle()">
+        <img src="../img/hamburger.png" alt="hamburger" class="hamburger_size" />
+      </div>
+      <div class="menu_list" id="menu_list">
+        <a href="../index.html" class="menu_items ">Home</a>
         <a href="./gallery.html" class="menu_items">Gallery</a>
         <a href="./package.html" class="menu_items">GYM Package</a>
         <a href="./bmi.html" class="menu_items">BIM Calculator</a>
-        <a href="./testimonial.html"class="menu_items">Testimonial</a>
-        <a href="./Gym-franchise.html" class="menu_items">Careers</a>
-        <a href="./aboutus.html" class="menu_items">About Us</a>
+        <a href="./testimonial.html" class="menu_items">Testimonial</a>
+        <a href="#" class="menu_items active" >About Us</a>
         <a href="./registration.html" class="menu_items">Registration</a>
+        <a href="./Gym-franchise.html" class="menu_items">Franchise</a>
         <a href="./contact.html" class="menu_items">Contact</a>
-      </div>
     </div>
+  </header>
+     <!-- Header end -->
     <!-- Wrapper Start -->
     <div class="wrapper">
       <!-- Curosal Start -->
@@ -140,64 +143,67 @@ Bio: Alex brings energy and innovation to every session, designing creative, eff
           </div>
       <!-- Footer Start  -->
       <footer>
-          <div class="footer_section">
-            <div class="footer-nav-links">
-              <h3>Links</h3>
-              <ul>
-                <li><a href="./../index.html" class="footer_text">Home</a></li>
-                <li><a href="./aboutus.html" class="footer_text">About Us</a></li>
-                <li><a href="./contact.html" class="footer_text">Contact</a></li>
-                <li><a href="./registration.html" class="footer_text">Register</a></li>
-              </ul>
-            </div>
-            <div class="footer-nav-links">
-              <h3>Important Links</h3>
-              <ul>
-                <li><a href="./gallery.html" class="footer_text">Gallery</a></li>
-                <li><a href="./package.html" class="footer_text">Gym Package</a></li>
-                <li><a href="./aboutus.html" class="footer_text">BIM Calculator</a></li>
-                <li><a href="./testimonial.html" class="footer_text">Testimonial</a></li>
-                <li><a href="./Gym-franchise.html" class="footer_text">Careers</a></li>
-              </ul>
-            </div>
-            <div class="footer-nav-links">
-              <h3>Address</h3>
-              <ul>
-                <li>6709 Civil Lines,</li>
-                <li>Netaji Nagar, Area 15,</li>
-                <li>Pune, Maharashtra 440678 India</li>
-              </ul>
-              <div class="footer-follow-us-Container">
-                <h3>Follow Us</h3>
-                <div class="top-nav-icons">
-                  <a href="http://facebook.com" target="_blank">
-                    <i class="fa-brands fa-facebook Social"></i>
-                  </a>
-                  <a href="https://instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram Social"></i>
-                  </a>
-                  <a href="https://web.telegram.org" target="_blank">
-                    <i class="fa-brands fa-telegram Social"></i>
-                  </a>
-                  <a href="https://youtube.com" target="_blank">
-                    <i class="fa-brands fa-youtube Social"></i>
-                  </a>
-                </div>
+        <div class="footer_section">
+          <div class="footer-nav-links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="../index.html" class="footer_text">Home</a></li>
+              <li><a href="./aboutus.html" class="footer_text">About Us</a></li>
+              <li><a href="./contact.html" class="footer_text">Contact</a></li>
+              <li><a href="./registration.html" class="footer_text">Register</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-links">
+            <h3>Important Links</h3>
+            <ul>
+              <li><a href="./gallery.html" class="footer_text">Gallery</a></li>
+              <li><a href="./package.html" class="footer_text">Gym Package</a></li>
+              <li><a href="./bmi.html" class="footer_text">BIM Calculator</a></li>
+              <li><a href="./testimonial.html" class="footer_text">Testimonial</a></li>
+              <li><a href="./Gym-franchise.html" class="footer_text">Franchise</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-links">
+            <h3>Address</h3>
+            <ul>
+              <li>6709 Civil Lines,</li>
+              <li>Netaji Nagar, Area 15,</li>
+              <li>Pune, Maharashtra 440678 India</li>
+            </ul>
+            <div class="footer-follow-us-Container">
+              <h3>Follow Us</h3>
+              <div class="top-nav-icons">
+                <a href="http://facebook.com" target="_blank">
+                  <i class="fa-brands fa-facebook Social"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                  <i class="fa-brands fa-instagram Social"></i>
+                </a>
+                <a href="https://web.telegram.org" target="_blank">
+                  <i class="fa-brands fa-telegram Social"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                  <i class="fa-brands fa-youtube Social"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="footer-copyright-section">
-            <p>
-              Copyright © 2024 Gym Website. All rights reserved | Design by
-              ICP-9.0 Group 1
-            </p>
-          </div>
-        </footer>
+        </div>
+        <div class="footer-copyright-section">
+          <p>
+            Copyright © 2024 Gym Website. All rights reserved | Design by
+            ICP-9.0 Group 1
+          </p>
+        </div>
+    </footer>
       <!-- Footer End -->
   </div>
 <!-- Container End -->
 <!-- Script Start -->
-<script type="text/javascript" src="./js/common.js"></script>
+ <script>
+  let page='aboutus';
+ </script>
+<script type="text/javascript" src="../js/common.js"></script>
 <!-- Script End -->
 </body>
 </html>

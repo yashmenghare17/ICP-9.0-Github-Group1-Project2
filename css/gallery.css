@@ -1,50 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "Parkinsans", sans-serif;
-}
-.container{
-    width: 100%;
-}
-/*navbar*/
-.hamburger{
-    display: none;
-}
-.navbar{
-    background-color: #001858;
-    display: flex;
-}
-.logo{
-    height: 60px;
-    width: 60px;
-    margin: 10px;
-    border-radius: 50%;
-}
-.menu_list{
-    margin-left: 160px;
-    margin-top: 28px;
-}
-.menu_items{
-    text-decoration: none;
-    margin-right: 25px;
-    font-size: 14px;
-    color: #fef6e4;
-    font-weight: bold;
-    cursor: pointer;;
-}
-.menu_items:hover{
-    color: #f582ae;
-}
-.toggle_switch{
-    margin-top: 14px;
-    margin-left: 80px;
-}
-.toggle_btn{
-    height: 60px;
-    width: 60px;
-}
-/*navbar ended here*/
-
 /*gallery box*/
 .gallery_container{
     width: 70%;
@@ -66,37 +19,6 @@ body{
     font-size: 40px;
     color: #001858;
     font-weight: bold;
-}
-/*footer section started*/
-.footer_section{
-    background-color: #001858;
-    display: flex;
-    padding: 40px 20px;
-    margin-top: 80px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-    color: #fef6e4;
-}
-.footer_text{
-    text-decoration: none;
-    color: #fef6e4;
-}
-.footer_text:hover{
-    color: #f582ae;
-}
-.Social{
-    color: #fef6e4;
-    text-decoration: none;
-    margin-right: 10px;
-    font-size: 20px;
-}
-.Social:hover{
-    color: #f582ae;
-    transform: scale(1.1);
-}
-.footer-copyright-section{
-    text-align: center;
 }
 .overlay{
     background-color: rgba(0, 0, 0, 0.5);
@@ -138,31 +60,7 @@ body{
 /* Mobile Device */
 
 @media screen and (max-width: 500px){
-    /*navbar*/
-    .hamburger{
-       visibility: visible;
-    }
-    .hamburger_size{
-        height: 20px;
-        width: 20px;
-    }
-    .navbar{
-        background-color: #001858;
-        display: flex;
-        width: auto;
-    }
-    .menu_list{
-        display: none;
-    }
-    .toggle_switch{
-        margin-top: 35px;
-        margin-left: 300px;
-    }
-    .toggle_btn{
-        height: 45px;
-        width: 45px;
-    } 
-    
+   
     /*background_img*/
     .Banner{
         position: relative;
@@ -185,7 +83,7 @@ body{
     height: 250px;
     width: 250px;
     cursor: pointer;
-    margin-left: 30px;
+    margin: 10px auto;
 }
 .gallery_box:hover{
     transform: scale(0.9);
@@ -196,38 +94,4 @@ body{
     color: #001858;
     font-weight: bold;
 }
-}
-/*Tablet devices*/
-@media screen and (min-width: 501px) and (max-width : 992px){
-    /*navbar*/
-    .hamburger{
-        display: none;
-    }
-    .navbar{
-        background-color: #001858;
-        display: flex;
-    }
-    .menu_list{
-        margin-left: 20px;
-        margin-top: 28px;
-    }
-    .menu_items{
-        text-decoration: none;
-        margin-right: 10px;
-        font-size: 10px;
-        color: #fef6e4;
-        font-weight: bold;
-        cursor: pointer;;
-    }
-    .menu_items:hover{
-        color: #8bd3dd;
-    }
-    .toggle_switch{
-        margin-top: 28px;
-        margin-left: 10px;
-    }
-    .toggle_btn{
-        height: 40px;
-        width: 40px;
-    }
 }
