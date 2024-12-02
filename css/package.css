@@ -172,7 +172,7 @@
         margin-left: 5%;
         padding: 15px;
     }
-    
+
     .submit-btn{
         width: 90%;
         font-size: 14px;  
@@ -183,5 +183,53 @@
 
     .model-heading{
         margin-left: 130px;
+    }
+}
+
+
+/* Media query for tablet devices */
+@media screen and (min-width: 501px) and (max-width : 992px)
+{
+    .content-container {
+        width: 80%;  
+        margin-left: 10%;  
+        padding: 15px;  
+        height: auto;  
+    }
+
+    .trial-img {
+        width: 100%; 
+        height: auto;  
+        margin-top: 20px;
+    }
+
+    .trial-text {
+        font-size: 22px;
+        margin-top: -200px;  
+        margin-bottom: 200px;  
+        width: 90%;  
+    }
+
+    .form-container {
+        width: 80%;  
+        margin-left: 10%;
+        padding: 15px;  
+    }
+
+    .form-text {
+        font-size: 22px; 
+    }
+
+    .submit-btn {
+        width: 80%;  
+        font-size: 16px;  
+        margin-bottom: 12px; 
+        height: 40px;  
+        font-size: 16px;  
+    }
+
+    .model-heading {
+        font-size: 18px; 
+
     }
 }
