@@ -40,9 +40,10 @@
     width: 500px;
     display: flex;
     flex-direction: column;
-    margin-left: 530px;
     justify-content: center;
     border-radius: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .form{
@@ -141,25 +142,6 @@
     cursor: pointer;
 }
 
-.membership-text{
-    text-align: center;
-    margin-top: 40px;
-}
-
-.membership-btn{
-    background-color: #ff6347 ;
-    padding: 10px 10px;
-    border: #fc694f 1px solid;
-    margin-left: 700px;
-    font-size: 15px;
-    color: #fff;
-}
-
-.membership-btn:hover{
-    cursor: pointer;
-    background-color: #ff4500;
-}
-
 
 
 /* Media query for mobile device */
@@ -242,7 +224,6 @@
 
     .model-heading{
         font-size: 18px; 
-
     }
 }
 
