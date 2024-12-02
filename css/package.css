@@ -130,6 +130,7 @@
 
 .ok-btn:hover{
     background-color: #ff4500;
+    cursor: pointer;
 }
 
 .close-icon{
