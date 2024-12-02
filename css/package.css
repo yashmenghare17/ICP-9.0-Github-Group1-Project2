@@ -178,6 +178,14 @@
     flex-direction: row;
 }
 
+.buy-btn{
+    background-color: #ff6347 ;
+    padding: 10px 10px;
+    border: #fc694f 1px solid;
+    font-size: 15px;
+    color: #fff;
+    margin-left: 95px;
+}
 
 
 
