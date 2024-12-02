@@ -141,6 +141,20 @@
     cursor: pointer;
 }
 
+.membership-text{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.membership-btn{
+    background-color: #ff6347 ;
+    padding: 10px 10px;
+    border: #fc694f 1px solid;
+    margin-left: 700px;
+    font-size: 15px;
+    color: #fff;
+}
+
 
 /* Media query for mobile device */
 @media screen and (max-width: 500px) 
