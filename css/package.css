@@ -26,9 +26,6 @@
     color: rgb(6, 6, 143);
     font-size: 30px;
     text-align: center;
-    margin-top: -300px;
-    margin-bottom: 300px;
-    width: 500px;
 }
 
 .form-text{
@@ -162,9 +159,6 @@
 
     .trial-text{
         font-size: 20px;  
-        margin-top: -260px;
-        margin-bottom: 250px;
-        width: 200px;  
     }
 
     .form-container{
@@ -190,37 +184,34 @@
 /* Media query for tablet devices */
 @media screen and (min-width: 501px) and (max-width : 992px)
 {
-    .content-container {
+    .content-container{
         width: 80%;  
         margin-left: 10%;  
         padding: 15px;  
         height: auto;  
     }
 
-    .trial-img {
+    .trial-img{
         width: 100%; 
         height: auto;  
         margin-top: 20px;
     }
 
-    .trial-text {
+    .trial-text{
         font-size: 22px;
-        margin-top: -200px;  
-        margin-bottom: 200px;  
-        width: 90%;  
     }
 
-    .form-container {
+    .form-container{
         width: 80%;  
         margin-left: 10%;
         padding: 15px;  
     }
 
-    .form-text {
+    .form-text{
         font-size: 22px; 
     }
 
-    .submit-btn {
+    .submit-btn{
         width: 80%;  
         font-size: 16px;  
         margin-bottom: 12px; 
@@ -228,7 +219,7 @@
         font-size: 16px;  
     }
 
-    .model-heading {
+    .model-heading{
         font-size: 18px; 
 
     }
@@ -252,10 +243,7 @@
     }
 
     .trial-text{
-        font-size: 26px; 
-        margin-top: -250px;  
-        margin-bottom: 250px;  
-        width: 80%;  
+        font-size: 26px;  
     }
 
     .form-container{
