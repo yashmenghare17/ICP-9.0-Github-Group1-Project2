@@ -233,3 +233,51 @@
 
     }
 }
+
+
+/* Media query for dekstop devices */
+@media screen and (min-width: 993px) and (max-width : 1200px)
+{
+    .content-container{
+        width: 80%;  
+        margin-left: 10%;  
+        padding: 15px;  
+        height: auto;  
+    }
+
+    .trial-img{
+        width: 100%;  
+        height: auto;  
+        margin-top: 20px;
+    }
+
+    .trial-text{
+        font-size: 26px; 
+        margin-top: -250px;  
+        margin-bottom: 250px;  
+        width: 80%;  
+    }
+
+    .form-container{
+        width: 70%;  
+        margin-left: 15%;  
+        padding: 15px;  
+    }
+
+    .form-text{
+        font-size: 24px;  
+    }
+
+    .submit-btn{
+        width: 65%; 
+        font-size: 16px;  
+        margin-bottom: 12px;  
+        height: 45px;  
+        font-size: 17px;
+    }
+
+    .model-heading{
+        font-size: 18px;  
+        margin-left: 0;  
+    }
+}
