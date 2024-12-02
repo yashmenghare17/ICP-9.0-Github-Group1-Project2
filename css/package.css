@@ -149,6 +149,35 @@
     margin-top: 20px;
 }
 
+.membership-text{
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+.membership-btn{
+    background-color: #ff6347 ;
+    padding: 10px 10px;
+    border: #fc694f 1px solid;
+    font-size: 15px;
+    color: #fff;
+    margin-left: 370px;
+}
+
+.membership-btn:hover{
+    cursor: pointer;
+    background-color: #ff4500;
+}
+
+.membership-container{
+    margin-left: 30px;
+}
+
+.membership-form{
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 
