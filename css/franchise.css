@@ -1,11 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
+.child-container {
     width: 400px;
     margin-bottom: 20px;
     padding: 20px;
@@ -110,4 +103,122 @@ form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+/* Mobile device */
+@media screen and (max-width: 500px) {
+    /* Mobile Header Adjustments */
+    header {
+        padding: 10px;
+        text-align: left;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: left;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        display: block;
+        
+    }
+
+
+    .main-container {
+        display: block;
+        padding: 10px;
+        width: 400px;
+    }
+
+    .child-container {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        box-shadow: none;
+        margin-left: 10px;
+    }
+
+    .sub-container {
+        display: block;
+    }
+    .paragraph{
+        width: 400px;
+        margin-left:10px ;
+
+    }
+
+
+    
+    .main-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sub-img {
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .form-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Tablet Device  */
+@media screen and (min-width: 501px) and (max-width: 992px) {
+    
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .child-container {
+        width: 48%; 
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .sub-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .paragraph {
+        width: 100%; 
+        margin-left: 0;
+    }
+
+    .sub-img {
+        width: 100%; 
+        height: auto;
+    }
+
+   
+    .form-container {
+        width: 100%;
+        padding: 15px;
+        margin-top: 170px;
+    }
+
+    
+    .main-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="tel"],
+    .form-container select,
+    .form-container textarea {
+        padding: 10px;
+    }
 }
