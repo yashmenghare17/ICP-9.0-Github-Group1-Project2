@@ -11,11 +11,11 @@ body
 .parent-container
 {
     margin: 50px 50px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color:  #fffffe;
+    border-radius: 5px;
 }
 .child-container
 {
@@ -33,19 +33,14 @@ body
 }
 .paragraph-container
 {
-   font-size: 20px;
-   text-align: center;
-   margin: 20px;
+   font-size: 16px;
+   
+   text-align: justify;
+   line-height: 25px;
 
     
 
 }
-
-
-
-
-
-
 
 
 .register-paragraph
@@ -76,6 +71,7 @@ body
 .paragraph {
     text-align: center;
     color: #fef6e4;
+    
 }
 
 .from-container {
@@ -181,100 +177,150 @@ select {
 
 
 
-/* Mobile device */
+/* Mobile devices  */
 @media only screen and (max-width: 500px) {
-    
-    .parent-container
-    {
-        width: 300px;
-        height: 400px;
+    body {
+        background-color: #fef6e4;
+    }
+
+    .register-heading {
+        font-size: 25px;
+    }
+
+    .parent-container {
+        margin: 20px;
         flex-direction: column;
-        margin-left: 100px;
+        align-items: center;
     }
-    .register-img
-    {
-        width: 200px;
-        height: 200px;
-        margin-left: 50px;
-    }
-    .paragraph-container
-   {
-     font-size: 10px;
-     
-     margin: 5px;
-   }
 
-    /*register from */
+    .child-container {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .register-img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .register-paragraph {
+        font-size: 16px;
+        padding: 5px;
+    }
+
     .register-from-container {
-
-        height: 600px;
-        width: 400px;
+        width: 100%;
         padding: 10px;
-        margin-left: 20px;
-        margin-top: 20px;
+        margin: 10px auto;
     }
 
-    .input {
-        margin-left: 5px;
-
+    .page-heading {
+        font-size: 25px;
+        text-align: center;
     }
 
-    select {
-        margin-left: 5px;
+    .paragraph {
+        font-size: 14px;
+        text-align: center;
     }
 
-    .model {
-        margin-left: 15px;
+    .input, select {
+        width: 90%;
+        margin-left: 0;
+        padding: 8px;
     }
 
+    .submit-btn {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .overlay .model {
+        width: 90%;
+        margin-left: 5%;
+    }
 }
 
-
-
-
-/*Tablet device*/
-@media screen and (min-width: 501px) and (max-width : 992px) {
-    .curosal_img {
-        width: 819px;
-        height: 630px;
-    }
-    .parent-container
-    {
-        width: 500px;
-        height: 600px;
-        flex-direction: column;
-        margin-left: 130px;
-    }
-    .register-img
-    {
-        width: 400px;
-        height: 200px;
-        margin-left: 50px;
-        padding: 10px;
+/* Tablet devices  */
+@media screen and (min-width: 501px) and (max-width: 992px) {
+    body {
+        background-color: #fef6e4;
     }
 
-    /*register from */
+    .register-heading {
+        font-size: 30px;
+    }
+
+    .parent-container {
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #fffffe;
+        border-radius: 5px;
+    }
+
+    .child-container {
+        width: 45%;
+    }
+
+    .register-img {
+        width: 45%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .paragraph-container {
+        font-size: 16px;
+        text-align: justify;
+        line-height: 25px;
+    }
+
+    .register-paragraph {
+        font-size: 18px;
+        text-align: center;
+        color: #001858;
+    }
+
     .register-from-container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
 
-        height: 600px;
-        width: 400px;
+    .page-heading {
+        font-size: 28px;
+        text-align: center;
+        color: #fef6e4;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        text-align: center;
+        color: #fef6e4;
+    }
+
+    .input, select {
+        width: 100%;
         padding: 10px;
-        margin-left: 200px;
-        margin-top: 40px;
+        margin: 8px 0;
     }
 
-    .input {
-        margin-left: 5px;
+    .submit-btn {
+        background-color: #ff6347;
+        color: #fef6e4;
+        padding: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 100%;
     }
 
-    select {
-        margin-left: 5px;
+    .overlay .model {
+        width: 70%;
+        margin-left: 15%;
     }
-
-    .model {
-        margin-left: 200px;
-    }
-
-
-
 }
