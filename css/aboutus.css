@@ -102,7 +102,7 @@ body{
 
 /* Mobile Device */
 
-@media screen and (max-width: 500px){
+@media screen and (min-width: 300px)and (max-width:500px){
     /*navbar*/
     .container{
         position: relative;
