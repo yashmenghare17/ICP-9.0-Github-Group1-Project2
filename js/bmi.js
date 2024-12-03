@@ -7,7 +7,7 @@ function calculateBMI() {
         document.getElementById('bmiImage').style.display = "none";
         return;
     }
-    
+
 
     const heightInMeters = height / 100;
     const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
@@ -36,8 +36,8 @@ function calculateBMI() {
 }
 
 
- const benefitItems = document.querySelectorAll(".benefit-item");
- const highlightBoxes = document.querySelectorAll(".highlight-box");
+const benefitItems = document.querySelectorAll(".benefit-item");
+const highlightBoxes = document.querySelectorAll(".highlight-box");
 
 // Add click event to each benefit item
 benefitItems.forEach(item => {
