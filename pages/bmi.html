@@ -8,6 +8,7 @@
   <link href="../css/bmi.css" type="text/css" rel="stylesheet" />
     <link href="../css/style.css" type="text/css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <!-- Container Start -->
@@ -18,9 +19,11 @@
                     <div class="logo_img" onclick="window.location='index.html'">
                       <img src="../img/gymlogo.jpg" alt="logo" class="logo"/>
                     </div>
-                    <div class="toggle_switch">
-                      <img src="../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
-                    </div>
+                    <div class="toggle_switch" onclick="toggleTheme()">
+                      <img src="../img/toggle_light.png" alt="toggle_light" id="toggle_light" class="toggle_btn" />
+                      <img src="../img/toggle_dark.png" alt="toggle_dark" id="toggle_dark" class="toggle_btn" style="display: none;" />
+                  </div>
+                  
                     <div class="hamburger" onclick="menutoggle()">
                       <img src="../img/hamburger.png" alt="hamburger" class="hamburger_size" />
                     </div>
@@ -50,13 +53,8 @@
                     <!-- Curosal End -->
  <!-- Wrapper End -->
 
-    
-  
- 
-        
-        <!--bmi section-->
-
-        <div class="intr1">
+     <!--bmi section-->
+    <div class="intr1">
             <h1>Introduction to the Body Mass Index (BMI)</h1>
             <p>
               Body Mass Index (BMI) is widely used as an indicator of body fat content. Your weight alone is not sufficient to establish if you are in a healthy weight range. For example, a tall but slender person can weigh more than a short but plump individual. But the former may enjoy better health as long as their weight is suitable for their height. The ideal weight is also likely to differ for men and women of similar heights.
