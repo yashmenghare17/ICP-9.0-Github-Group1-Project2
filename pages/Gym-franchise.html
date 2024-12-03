@@ -2,162 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IronPlus Gym - Franchise</title>
-    <link rel="icon" href="./../img/gymlogo.jpg" type="image/icon type">
-    <link rel="stylesheet" href="../css/franchise.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym - Franchise</title>
+  <link rel="icon" href="./../img/gymlogo.jpg" type="image/icon type">
+  <link rel="stylesheet" href="./../css/franchise.css">
+  <link rel="stylesheet" href="./../css/style.css">
+  <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- Container Start -->
   <div class="container">
     <!-- Header Start -->
-        <header class="navbar">
-            <div class="logo_img" onclick="window.location='./../index.html'">
-              <img src="./../img/gymlogo.jpg" alt="logo" class="logo"/>
-            </div>
-            <div class="toggle_switch">
-              <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
-            </div>
-            <div class="hamburger" onclick="menutoggle()">
-              <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
-            </div>
-            <div class="menu_list" id="menu_list">
-              <a href="./../index.html" class="menu_items active">Home</a>
-              <a href="./../pages/gallery.html" class="menu_items">Gallery</a>
-              <a href="./../pages/package.html" class="menu_items">GYM Package</a>
-              <a href="./../pages/bmi.html" class="menu_items">BIM Calculator</a>
-              <a href="./../pages/testimonial.html" class="menu_items">Testimonial</a>
-              <a href="./../pages/aboutus.html" class="menu_items">About Us</a>
-              <a href="./../pages/registration.html" class="menu_items">Registration</a>
-              <a href="#" class="menu_items">Franchise</a>
-              <a href="./../pages/contact.html" class="menu_items">Contact</a>
-          </div>
-        </header>
+    <header class="navbar">
+      <div class="logo_img" onclick="window.location='./../index.html'">
+        <img src="./../img/gymlogo.jpg" alt="logo" class="logo" />
+      </div>
+      <div class="toggle_switch" onclick="toggle()">
+        <img src="./../img/toggle_light.png" alt="toggle_light" id="toggle_light" class="toggle_btn" />
+        <img src="./../img/toggle_dark.png" alt="toggle_light" class="toggle_btn" id="toggle_dark"
+          style="display: none;" />
+      </div>
+      <div class="hamburger" onclick="menutoggle()">
+        <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
+      </div>
+      <div class="menu_list" id="menu_list">
+        <a href="./../index.html" class="menu_items active">Home</a>
+        <a href="./../pages/gallery.html" class="menu_items">Gallery</a>
+        <a href="./../pages/package.html" class="menu_items">GYM Package</a>
+        <a href="./../pages/bmi.html" class="menu_items">BIM Calculator</a>
+        <a href="./../pages/testimonial.html" class="menu_items">Testimonial</a>
+        <a href="./../pages/aboutus.html" class="menu_items">About Us</a>
+        <a href="./../pages/registration.html" class="menu_items">Registration</a>
+        <a href="#" class="menu_items">Franchise</a>
+        <a href="./../pages/contact.html" class="menu_items">Contact</a>
+      </div>
+    </header>
     <!-- Header End -->
-    
 
 
-         <!-- Wrapper Start -->
-         <div class="wrapper">
-            <!-- Curosal Start -->
-             <div class="main-curosal">
-                <div class="curosal_img" id="curosal_img">
-                    <img src="../img/home-curosal-img1.jpg"  alt="home-curosal-img1" />
-                </div>
-                <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="../img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
-                <div class="next_cuorsal" onclick="prevNext('Next')"><img src="../img/home-curosal-next.png"  alt="homecurosalnext" /></div>
-             </div>
-            <!-- Curosal End -->
-    
-    
-    
-    
-    
-    
-    
-    <img src="../img/main-img.jpg" class="main-img" />
 
-    <div class="main-container">
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+      <!-- Curosal Start -->
+      <div class="main-curosal">
+        <div class="curosal_img" id="curosal_img">
+          <img src="../img/home-curosal-img1.jpg" alt="home-curosal-img1" />
+        </div>
+        <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="../img/home-curosal-prev.png"
+            alt="homecurosalprev" /></div>
+        <div class="next_cuorsal" onclick="prevNext('Next')"><img src="../img/home-curosal-next.png"
+            alt="homecurosalnext" /></div>
+      </div>
+      <!-- Curosal End -->
+
+
+
+
+
+
+
+
+      <img src="../img/main-img.jpg" class="main-img" />
+
+      <div class="main-container">
 
         <div class="child-container">
-            <h2>Welcome to Our Gym Franchise</h2>
-            <p>Discover the potential of owning a fitness franchise with us. Be part of a growing fitness community.</p>
+          <h2>Welcome to Our Gym Franchise</h2>
+          <p>Discover the potential of owning a fitness franchise with us. Be part of a growing fitness community.</p>
         </div>
 
 
 
         <div class="child-container">
-            <h2>About Us</h2>
-            <p>We are a leading fitness brand dedicated to helping people achieve their fitness goals with
-                state-of-the-art facilities and expert trainers.</p>
+          <h2>About Us</h2>
+          <p>We are a leading fitness brand dedicated to helping people achieve their fitness goals with
+            state-of-the-art facilities and expert trainers.</p>
         </div>
 
         <div class="child-container">
-            <h2>Franchise Benefits</h2>
-            <ul>
-                <li>Proven Business Model</li>
-                <li>Comprehensive Training</li>
-                <li>Marketing Support</li>
-                <li>Exclusive Territory</li>
-                <li>Ongoing Operational Support</li>
-            </ul>
+          <h2>Franchise Benefits</h2>
+          <ul>
+            <li>Proven Business Model</li>
+            <li>Comprehensive Training</li>
+            <li>Marketing Support</li>
+            <li>Exclusive Territory</li>
+            <li>Ongoing Operational Support</li>
+          </ul>
         </div>
 
 
         <div class="child-container">
-            <h2>Franchise Process</h2>
-            <ol>
-                <li>Submit Your Application</li>
-                <li>Attend Our Discovery Day</li>
-                <li>Sign the Franchise Agreement</li>
-                <li>Receive Training and Support</li>
-                <li>Open Your Gym Franchise</li>
-            </ol>
+          <h2>Franchise Process</h2>
+          <ol>
+            <li>Submit Your Application</li>
+            <li>Attend Our Discovery Day</li>
+            <li>Sign the Franchise Agreement</li>
+            <li>Receive Training and Support</li>
+            <li>Open Your Gym Franchise</li>
+          </ol>
         </div>
 
 
 
         <div class="child-container">
-            <h2>Testimonials</h2>
-            <blockquote>
-                <p>“Opening a gym franchise with this company has been a fantastic experience.”</p>
-                <cite>- Satisfied Franchisee</cite>
-            </blockquote>
+          <h2>Testimonials</h2>
+          <blockquote>
+            <p>“Opening a gym franchise with this company has been a fantastic experience.”</p>
+            <cite>- Satisfied Franchisee</cite>
+          </blockquote>
         </div>
 
-    </div>
+      </div>
 
-    <div class="sub-container">
+      <div class="sub-container">
         <div class="paragraph ">
-            <img src="../img/sub-img.jpg" class="sub-img " />
-            <p>Gold's Gym has become the largest co-ed gym chain in the world with over 700+ clubs in 27 countries, across 6 continents serving more than 2 million customers. Gold’s Gym India started in the year 2002 in Mumbai. The Year 2021 marked the 19th Anniversary of Gold’s Gym India. 150+ active Gold’s Gym clubs in India and a few more under construction. 
-            </p>
-            <p>
-             Multiple gym formats – Regular, Express and Activ fitness centres.
-            Presence in 95+ cities and 25 states. 60+ years of presence in the health and fitness industry, Gold’s Gym is a best franchises 
+          <img src="../img/sub-img.jpg" class="sub-img " />
+          <p>Gold's Gym has become the largest co-ed gym chain in the world with over 700+ clubs in 27 countries, across
+            6 continents serving more than 2 million customers. Gold’s Gym India started in the year 2002 in Mumbai. The
+            Year 2021 marked the 19th Anniversary of Gold’s Gym India. 150+ active Gold’s Gym clubs in India and a few
+            more under construction.
+          </p>
+          <p>
+            Multiple gym formats – Regular, Express and Activ fitness centres.
+            Presence in 95+ cities and 25 states. 60+ years of presence in the health and fitness industry, Gold’s Gym
+            is a best franchises
             to own.</p>
         </div>
 
         <section id="application">
-            <div class="form-container child-container">
-                <h2>Franchise Application</h2>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+          <div class="form-container child-container">
+            <h2>Franchise Application</h2>
+            <form action="#" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
 
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
 
-                    <label for="location">Preferred Location:</label>
-                    <input type="text" id="location" name="location" required>
+              <label for="location">Preferred Location:</label>
+              <input type="text" id="location" name="location" required>
 
-                    <label for="investment">Investment Range:</label>
-                    <select id="investment" name="investment" required>
-                        <option value="below_50k">Below $50,000</option>
-                        <option value="50k-100k">$50,000 - $100,000</option>
-                        <option value="100k-200k">$100,000 - $200,000</option>
-                        <option value="above_200k">Above $200,000</option>
-                    </select> <label for="message">Why do you want to open a franchise with us?</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+              <label for="investment">Investment Range:</label>
+              <select id="investment" name="investment" required>
+                <option value="below_50k">Below $50,000</option>
+                <option value="50k-100k">$50,000 - $100,000</option>
+                <option value="100k-200k">$100,000 - $200,000</option>
+                <option value="above_200k">Above $200,000</option>
+              </select> <label for="message">Why do you want to open a franchise with us?</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
 
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
 
         </section>
-    </div>
+      </div>
 
 
 
-     <!-- Footer Start  -->
-     <footer>
+      <!-- Footer Start  -->
+      <footer>
         <div class="footer_section">
           <div class="footer-nav-links">
             <h3>Links</h3>
@@ -211,13 +220,13 @@
           </p>
         </div>
       </footer>
-    <!-- Footer End -->
-</div>
+      <!-- Footer End -->
+    </div>
 
-<script>
-    var page = 'Gym-fanchise';
-</script>
-   <script type="text/javascript" src="../js/common.js"></script>
+    <script>
+      var page = 'Gym-fanchise';
+    </script>
+    <script type="text/javascript" src="../js/common.js"></script>
 
     <script src="../js/franchise.js"></script>
 </body>
