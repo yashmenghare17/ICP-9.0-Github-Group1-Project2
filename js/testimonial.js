@@ -116,6 +116,27 @@ function closeModal() {
   overlayElement.style.display = "none";
 }
 
+function toggle() {
+  let toggle_dark = document.getElementById("toggle_dark").style.display;
+  let toggle_light = document.getElementById("toggle_light").style.display;
+
+  if (toggle_dark == "none") {
+    document.getElementById("toggle_light").style.display = "none";
+    document.getElementById("toggle_dark").style.display = "block";
+    document.getElementById("body").style.backgroundColor = "#000";
+    document.getElementById("page-heading").style.color = "#fef6e4";
+    document.getElementById("slider-heading").style.color = "#fef6e4";
+    document.getElementById("footer-copyright-section").style.color = "#fef6e4";
+  } else {
+    document.getElementById("toggle_light").style.display = "block";
+    document.getElementById("toggle_dark").style.display = "none";
+    document.getElementById("body").style.backgroundColor = "#fef6e4";
+    document.getElementById("page-heading").style.color = "#001858";
+    document.getElementById("slider-heading").style.color = "#001858";
+    document.getElementById("footer-copyright-section").style.color = "#000";
+  }
+}
+
 // Initial setup
 loadTestimonials();
 displayTestimonial();
