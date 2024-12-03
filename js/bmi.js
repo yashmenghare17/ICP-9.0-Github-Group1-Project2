@@ -7,7 +7,7 @@ function calculateBMI() {
         document.getElementById('bmiImage').style.display = "none";
         return;
     }
-    
+
 
     const heightInMeters = height / 100;
     const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
@@ -36,8 +36,8 @@ function calculateBMI() {
 }
 
 
- const benefitItems = document.querySelectorAll(".benefit-item");
- const highlightBoxes = document.querySelectorAll(".highlight-box");
+const benefitItems = document.querySelectorAll(".benefit-item");
+const highlightBoxes = document.querySelectorAll(".highlight-box");
 
 // Add click event to each benefit item
 benefitItems.forEach(item => {
@@ -54,3 +54,23 @@ benefitItems.forEach(item => {
         document.getElementById(tab).classList.add("active");
     });
 });
+function toggleTheme() {
+    const lightImg = document.getElementById("toggle_light");
+    const darkImg = document.getElementById("toggle_dark");
+
+    // Check current theme and toggle
+    if (document.body.classList.contains("light-mode")) {
+        // Switch to dark mode
+        document.body.classList.remove("light-mode");
+        document.body.classList.add("dark-mode");
+        lightImg.style.display = "none";
+        darkImg.style.display = "inline";
+    } else {
+        // Switch to light mode
+        document.body.classList.remove("dark-mode");
+        document.body.classList.add("light-mode");
+        darkImg.style.display = "none";
+        lightImg.style.display = "inline";
+    }
+}
+
