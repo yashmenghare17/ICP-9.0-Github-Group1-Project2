@@ -17,5 +17,25 @@ We have various pages in this websites are as follows :
   This page content information about our gym.Ex : how many gyms, in cities ,states and basic information about gym .
 - **Language Used** : HTML 5,CSS,JS
 
+- ## BMI Calculator Page
 
+![Bmi Page Screen Shot](./img/bmi1.png)
 
+## Information About BMI Page
+
+- **Page Link** : [Visit Page](https://icp9-group1-project3.netlify.app/pages/bmi) .
+- **Summery Of Page** : This is an BMI Page.Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.It measure of your total body fat.
+- **Language Used** : HTML 5,CSS,JS..
+
+# Testimonials page
+
+- ## Information About Testimonials Page
+
+  This page provides an overview of the Gym Testimonials page, The page is designed to showcase client testimonials and frequently asked questions related to the gym.
+
+- ## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive design for mobile compatibility
