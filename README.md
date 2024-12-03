@@ -16,3 +16,17 @@ We have various pages in this websites are as follows :
 - **Summery Of Page** : This is an Home Page. This is an main entry page of our website.
   This page content information about our gym.Ex : how many gyms, in cities ,states and basic information about gym .
 - **Language Used** : HTML 5,CSS,JS
+
+# Testimonials 
+
+## Information About Testimonials Page
+This page provides an overview of the Gym Testimonials page,  The page is designed to showcase client testimonials and frequently asked questions related to the gym.
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Responsive design for mobile compatibility
+
+
+
