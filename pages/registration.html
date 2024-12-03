@@ -20,8 +20,11 @@
             <div class="logo_img" onclick="window.location='./../index.html'">
               <img src="./../img/gymlogo.jpg" alt="logo" class="logo"/>
             </div>
-            <div class="toggle_switch">
-              <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
+            <div class="toggle_switch" onclick="toggle()">
+              
+              <img src="./../img/toggle_light.png" alt="toggle_light" id="toggle_light" class="toggle_btn" />
+              <img src="./../img/toggle_dark.png" alt="toggle_light" class="toggle_btn"  id="toggle_dark" style="display: none;" />
+
             </div>
             <div class="hamburger" onclick="menutoggle()">
               <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
