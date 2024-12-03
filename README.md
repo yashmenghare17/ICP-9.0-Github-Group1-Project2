@@ -16,3 +16,13 @@ We have various pages in this websites are as follows :
 - **Summery Of Page** : This is an Home Page. This is an main entry page of our website.
   This page content information about our gym.Ex : how many gyms, in cities ,states and basic information about gym .
 - **Language Used** : HTML 5,CSS,JS
+
+- **Home**
+
+![Bmi Page Screen Shot](./img/bmi1.png)
+
+## Information About BMI Page
+
+- **Page Link** : [Visit  Page](https://icp9-group1-project3.netlify.app/pages/bmi) .
+- **Summery Of Page** : This is an BMI Page.Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.It measure of your total body fat.
+- **Language Used** : HTML 5,CSS,JS..
