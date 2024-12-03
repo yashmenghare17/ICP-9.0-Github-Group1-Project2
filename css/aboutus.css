@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     margin: 0;
     padding: 0;
@@ -283,6 +284,8 @@ body{
 }
 
 
+=======
+>>>>>>> 7216e93b6f9d005ab530cf06a0a830f2b9f9baab
 h1{
 text-align: center;
 font-size: 50px;
@@ -335,8 +338,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 padding: 30px;
-
-
+flex-wrap: wrap;
 }
 .img{
 height:700px;
@@ -382,7 +384,7 @@ margin:10px;
     }
     .img{
         height:200px;
-width:400px;
+        width:100%;
     }
     .image{
         height:50px;
@@ -391,9 +393,8 @@ width:400px;
     }
     .img1{
         height:200px;
-        width:400px;
-    margin:10px;
-        
+        width:100%;
+        margin:20px;   
     }
 }
 @media screen and (min-width: 600px) and (max-width : 900px){
@@ -408,7 +409,7 @@ width:400px;
     }
     .img{
         height:500px;
-width:700px;
+        width: 100%;
     }
     .image{
         height:100px;
@@ -416,10 +417,8 @@ width:700px;
     }
     .img1{
         height:500px;
-        width:800px;
+        width: 100%;
         margin:20px;
-
-        
     }
 
 }

@@ -9,56 +9,150 @@
 
     <link rel="stylesheet" href="./../css/package.css" />
 
+    <link rel="icon" href="./../img/gymlogo.jpg" type="image/icon type">
+
     <script src="https://kit.fontawesome.com/964923a91a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
             <!-- Header Start -->
-                <header class="navbar">
-                    <div class="hamburger">
-                        <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
-                    </div>
-                    <div class="logo_img">
-                    <i class="fa-solid fa-dumbbell" style="color: #fef6e4; font-size: 40px; margin-top: 15px;"></i>
-                    </div>
-                    <div class="menu_list">
-                        <a href="#" class="menu_items">Home</a>
-                        <a href="#" class="menu_items">Gallery</a>
-                        <a href="#" class="menu_items">GYM Package</a>
-                        <a href="#" class="menu_items">BIM Calculator</a>
-                        <a href="#" class="menu_items">Testimonial</a>
-                        <a href="#" class="menu_items">Careers</a>
-                        <a href="#" class="menu_items">About Us</a>
-                        <a href="#" class="menu_items">Registration</a>
-                        <a href="#" class="menu_items">Contact</a>
-                    </div>
-                    <div class="toggle_switch">
-                        <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
-                    </div>
-                </header>
+            <header class="navbar">
+                <div class="logo_img" onclick="window.location='../index.html'">
+                  <img src="./../img/gymlogo.jpg" alt="logo" class="logo"/>
+                </div>
+                <div class="toggle_switch">
+                  <img src="./../img/toggle_light.png" alt="toggle_light" class="toggle_btn" />
+                </div>
+                <div class="hamburger" onclick="menutoggle()">
+                  <img src="./../img/hamburger.png" alt="hamburger" class="hamburger_size" />
+                </div>
+                <div class="menu_list" id="menu_list">
+                  <a href="./../index.html" class="menu_items">Home</a>
+                  <a href="./../pages/gallery.html" class="menu_items">Gallery</a>
+                  <a href="./../pages/package.html" class="menu_items active">GYM Package</a>
+                  <a href="./../pages/bmi.html" class="menu_items">BIM Calculator</a>
+                  <a href="./../pages/testimonial.html" class="menu_items">Testimonial</a>
+                  <a href="./../pages/aboutus.html" class="menu_items">About Us</a>
+                  <a href="./../pages/registration.html" class="menu_items">Registration</a>
+                  <a href="./../pages/Gym-franchise.html" class="menu_items">Franchise</a>
+                  <a href="./../pages/contact.html" class="menu_items">Contact</a>
+              </div>
+            </header>
             <!-- Header End -->
+    </div>
+
+    <!-- Curosal Start -->
+     <div class="main-curosal">
+        <div class="curosal_img" id="curosal_img">
+            <img src="./../img/home-curosal-img1.jpg"  alt="home-curosal-img1" />
+        </div>
+        <div class="preq_cuorsal" onclick="prevNext('Prev')"><img src="./../img/home-curosal-prev.png"  alt="homecurosalprev" /></div>
+        <div class="next_cuorsal" onclick="prevNext('Next')"><img src="./../img/home-curosal-next.png"  alt="homecurosalnext" /></div>
+     </div>
+    <!-- Curosal End -->
+
+    <div class="content-container">        
+        <p> Why Physical Fitness Matters? <br> <br> <br>
+            A Sedentary Lifestyle And Elevated Stress Levels Are Not Uncommon In Corporate Executives. Insufficient Physical Activity Leads To A Decline In Energy, Stamina And Health, Which Adversely Affects Productivity And Performance. <br> <br>       
+            Aside From Reducing The Risk Of Heart Disease, High Blood Pressure, High Cholesterol, Stroke, Type 2 Diabetes And Certain Types Of Cancer, Regular Exercise Keeps You Energised And Helps You Carry Out Your Daily Activities More Efficiently. <br> <br> <br>
+        
+            Why Corporate Wellness Programs? <br> <br> <br>   
+            Corporate Wellness Programs Not Only Serve To Improve Output, But Also To Enhance Employee Loyalty. They Help Strengthen Team Spirit, Boost Confidence And Workforce Morale. <br> <br>       
+            At GOLD'S GYM, We Understand Both The Toll Corporate Lifestyle Can Take On Health, And The Benefits Of Establishing A Personal Fitness Regime. With The Ultimate Goal Of Spreading Fitness Through Well-Rounded Organisations, We Have Developed A Range Of Solutions And Services To Meet The Fitness Requirements Of Corporate Employees. 
+        </p>
     </div>
 
     <img src="./../img/trial-img.webp" class="trial-img" />
 
     <p class="trial-text"> Book a Free Trial & Buy a Membership </p>
 
-    <p class="form-text"> Fill this form to book a free trial </p>
+    <!--Form Start-->
+    <div class="membership-form">    
+        <div class="form-container">
+            <p class="form-text"> Fill this form to book a free trial </p>    
 
-    <div class="form-container"> 
-        <input type="text" placeholder="Enter Name" class="input-box" required /> <br> <br>
+            <div class="form"> 
+                <input type="text" placeholder="Enter Name" class="input-box" required /> <br> <br>
 
-        <input type="email" placeholder="Enter Email" class="input-box" required /> <br> <br>
+                <input type="email" placeholder="Enter Email" class="input-box" required /> <br> <br>
 
-        <input type="tel" placeholder="Mobile Number" class="input-box" required /> <br> <br>
+                <input type="tel" placeholder="Mobile Number" class="input-box" required /> <br> <br>
 
-        <input type="text" placeholder="Enter State" class="input-box" required /> <br> <br>
+                <select name="state " id="state" class="select-box" >
+                    <option value="">Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>                
+                </select> <br> <br>
+            
+                <select name="city" id="city" class="select-box">
+                    <option value="">Select City</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                </select> <br> <br>
 
-        <input type="text" placeholder="Enter City" class="input-box" required /> <br> <br>
+                <select name="gym" id="gym" class="select-box">
+                    <option value="">Select Gym</option>
+                    <option value="IronPlus">IronPlus</option>
+                    <option value="Gold Gym">Gold Gym</option>
+                    <option value="Planet Fitness">Planet Fitness</option>
+                    <option value="Anytime Fitness">Anytime Fitness</option>
+                    <option value="LA Fitness">LA Fitness</option>
+                    <option value="24 Hour Fitness">24 Hour Fitness</option>  
+                </select> <br> <br>
 
-        <input type="text" placeholder="Enter Message" class="message-box" required /> <br> <br>
+                <input type="text" placeholder="Enter Message" class="message-box" required /> <br> <br>
 
-        <input type="submit" class="submit-btn" />
+                <button type="button" class="submit-btn" onclick="openModel()"> SUBMIT </button>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <div class="model">      
+                <img src="./../img/close-window.png" alt="close" class="close-icon" id="close" onclick="closeModel()"> 
+                <h2 class="model-heading"> Thank You! </h2>            
+                <p class="dialog-paragraph" > Your details has been successfully submitted.Thanks! </p>
+                <button type="button" class="ok-btn" onclick="okButton()"> Ok </button> 
+            </div>
+        </div>
+    <!--Form End-->
+ 
+        <div class="membership-container">
+            <img src="./../img/gallery_img_6.webp" class="membership-img"/>
+            <h1 class="membership-text"> Request more information about our wellness program </h1>
+            <button type="button" class="membership-btn" onclick="buyMembership()"> BUY MEMBERSHIP </button>
+        </div>
+    </div>
+
+    <div class="overlay" id="buy-container">
+        <div class="model">
+            <img src="./../img/close-window.png" alt="close" class="close-icon" id="close" onclick="closeModel()"> 
+            <h1> Annual Membership </h1>
+            <p> Subtotal: 28000.00 </p>
+            <p> Enrollment Fees: 1000 </p>
+            <p> GST 18%: 5220 </p>
+            <p> Total: 34220 </p>
+
+            <button type="button" class="buy-btn" onclick="closeModel()"> BUY NOW </button>
+        </div>
     </div>
 
     <!--Footer Start-->
@@ -68,19 +162,19 @@
                 <h3>Links</h3>
                 <ul>
                     <li><a href="./../index.html" class="footer_text"> Home </a></li>
-                    <li><a href="" class="footer_text">About Us</a></li>
-                    <li><a href="" class="footer_text">Contact</a></li>
-                    <li><a href="" class="footer_text">Register</a></li>
+                    <li><a href="./aboutus.html" class="footer_text">About Us</a></li>
+                    <li><a href="./contact.html" class="footer_text">Contact</a></li>
+                    <li><a href="./registration.html" class="footer_text">Register</a></li>
                 </ul>
             </div>
 
             <div class="footer-nav-links">
                 <h3>Important Links</h3>
                 <ul>
-                    <li><a href="" class="footer_text">Gallery</a></li>
-                    <li><a href="" class="footer_text">Gym Package</a></li>
-                    <li><a href="" class="footer_text">BIM Calculator</a></li>
-                    <li><a href="" class="footer_text">Testimonial</a></li>
+                    <li><a href="./gallery.html" class="footer_text">Gallery</a></li>
+                    <li><a href="./package.html" class="footer_text">Gym Package</a></li>
+                    <li><a href="./bmi.html" class="footer_text">BIM Calculator</a></li>
+                    <li><a href="./testimonial.html" class="footer_text">Testimonial</a></li>
                     <li><a href="" class="footer_text">Careers</a></li>
                 </ul>
             </div>
@@ -121,5 +215,13 @@
         </div>
     </footer>
     <!--Footer End-->
+
+    <!--Script Start-->
+    <script type="text/javascript" src="./../js/common.js"></script>
+    <script>
+        let page= "package";
+    </script>
+    <script type="text/javascript" src="./../js/package.js"></script>
+    <!--Script End-->
 </body>
 </html>
