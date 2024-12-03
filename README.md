@@ -19,8 +19,7 @@ We have various pages in this websites are as follows :
 
 - ## BMI Calculator Page
 
-![Bmi Page Screen Shot](./img/bmi1.png)
-
+ 
 ## Information About BMI Page
 
 - **Page Link** : [Visit  Page](https://icp9-group1-project3.netlify.app/pages/bmi) .
