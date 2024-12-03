@@ -17,7 +17,7 @@ We have various pages in this websites are as follows :
   This page content information about our gym.Ex : how many gyms, in cities ,states and basic information about gym .
 - **Language Used** : HTML 5,CSS,JS
 
-- **Home**
+- **BMI Calculator Page**
 
 ![Bmi Page Screen Shot](./img/bmi1.png)
 
