@@ -127,6 +127,8 @@ function toggle() {
     document.getElementById("page-heading").style.color = "#fef6e4";
     document.getElementById("slider-heading").style.color = "#fef6e4";
     document.getElementById("footer-copyright-section").style.color = "#fef6e4";
+    document.getElementById("left-arrow").src = "../img/left-white.png";
+    document.getElementById("right-arrow").src = "../img/right-white.png";
   } else {
     document.getElementById("toggle_light").style.display = "block";
     document.getElementById("toggle_dark").style.display = "none";
@@ -134,6 +136,8 @@ function toggle() {
     document.getElementById("page-heading").style.color = "#001858";
     document.getElementById("slider-heading").style.color = "#001858";
     document.getElementById("footer-copyright-section").style.color = "#000";
+    document.getElementById("left-arrow").src = "../img/left.png";
+    document.getElementById("right-arrow").src = "../img/right-arrow.png";
   }
 }
 
