@@ -1,27 +1,28 @@
+// BMI Calculator
 function calculateBMI() {
     const weight = parseFloat(document.getElementById('weight').value);
     const height = parseFloat(document.getElementById('height').value);
 
+    const resultElement = document.getElementById('result');
+    const bmiImage = document.getElementById('bmiImage');
+
     if (!weight || !height || weight <= 0 || height <= 0) {
-        document.getElementById('result').innerText = "Please enter valid weight and height values.";
-        document.getElementById('bmiImage').style.display = "none";
+        resultElement.innerText = "Please enter valid weight and height values.";
+        bmiImage.style.display = "none";
         return;
     }
-
 
     const heightInMeters = height / 100;
     const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
 
-    let category = "";
-    let imgSrc = "";
-
+    let category, imgSrc;
     if (bmi < 18.5) {
         category = "Underweight";
         imgSrc = "../img/underweight.jpg";
-    } else if (bmi >= 18.5 && bmi < 24.9) {
+    } else if (bmi < 24.9) {
         category = "Normal weight";
         imgSrc = "../img/normal.avif";
-    } else if (bmi >= 25 && bmi < 29.9) {
+    } else if (bmi < 29.9) {
         category = "Overweight";
         imgSrc = "../img/overweight.avif";
     } else {
@@ -29,48 +30,34 @@ function calculateBMI() {
         imgSrc = "../img/obese.jpg";
     }
 
-    document.getElementById('result').innerText = `Your BMI is ${bmi} (${category}).`;
-    const bmiImage = document.getElementById('bmiImage');
+    resultElement.innerText = `Your BMI is ${bmi} (${category}).`;
     bmiImage.src = imgSrc;
     bmiImage.style.display = "block";
 }
 
-
-const benefitItems = document.querySelectorAll(".benefit-item");
-const highlightBoxes = document.querySelectorAll(".highlight-box");
-
-// Add click event to each benefit item
-benefitItems.forEach(item => {
-    item.addEventListener("click", () => {
-        // Remove active classes from all benefit items
-        benefitItems.forEach(i => i.classList.remove("active"));
-        highlightBoxes.forEach(box => box.classList.remove("active"));
-
-        // Add active class to clicked item
-        item.classList.add("active");
-
-        // Show the corresponding highlight box
-        const tab = item.getAttribute("data-tab");
-        document.getElementById(tab).classList.add("active");
-    });
-});
-function toggleTheme() {
-    const lightImg = document.getElementById("toggle_light");
-    const darkImg = document.getElementById("toggle_dark");
-
-    // Check current theme and toggle
-    if (document.body.classList.contains("light-mode")) {
-        // Switch to dark mode
-        document.body.classList.remove("light-mode");
-        document.body.classList.add("dark-mode");
-        lightImg.style.display = "none";
-        darkImg.style.display = "inline";
-    } else {
-        // Switch to light mode
-        document.body.classList.remove("dark-mode");
-        document.body.classList.add("light-mode");
-        darkImg.style.display = "none";
-        lightImg.style.display = "inline";
-    }
+function resetBMI() {
+    document.getElementById("weight").value = "";
+    document.getElementById("height").value = "";
+    document.getElementById("result").textContent = "";
+    const bmiImage = document.getElementById("bmiImage");
+    bmiImage.src = "";
+    bmiImage.style.display = "none";
 }
 
+// Benefits Tab Toggle
+document.querySelectorAll(".benefit-item").forEach(item => {
+    item.addEventListener("click", () => {
+        document.querySelectorAll(".benefit-item, .highlight-box").forEach(el => el.classList.remove("active"));
+        item.classList.add("active");
+        document.getElementById(item.getAttribute("data-tab")).classList.add("active");
+    });
+});
+
+// Theme Toggle
+function toggleTheme() {
+    const body = document.body;
+    const isLightMode = body.classList.toggle("light-mode", !body.classList.contains("light-mode"));
+    body.classList.toggle("dark-mode", !isLightMode);
+    document.getElementById("toggle_light").style.display = isLightMode ? "inline" : "none";
+    document.getElementById("toggle_dark").style.display = isLightMode ? "none" : "inline";
+}

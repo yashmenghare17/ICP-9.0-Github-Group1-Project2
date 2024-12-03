@@ -17,10 +17,9 @@ We have various pages in this websites are as follows :
   This page content information about our gym.Ex : how many gyms, in cities ,states and basic information about gym .
 - **Language Used** : HTML 5,CSS,JS
 
-- ## BMI Calculator Page
+ # BMI Calculator page
 
-![Bmi Page Screen Shot](./img/bmi1.png)
-
+ 
 ## Information About BMI Page
 
 - **Page Link** : [Visit Page](https://icp9-group1-project3.netlify.app/pages/bmi) .
