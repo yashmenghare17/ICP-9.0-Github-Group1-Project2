@@ -25,14 +25,12 @@ const Testimonials = [
   },
 ];
 
-// DOM Elements
 const slider = document.getElementById("slider");
 const prevBtn = document.getElementById("left-arrow");
 const nextBtn = document.getElementById("right-arrow");
 const form = document.getElementById("testimonial-form");
 const popup = document.getElementById("submission-popup");
 
-// State Variables
 let i = 0;
 
 // Display the current testimonial
@@ -44,7 +42,6 @@ const displayTestimonial = () => {
     `;
 };
 
-// Navigation Functions
 const showNextTestimonial = () => {
   i = (i + 1) % Testimonials.length;
   displayTestimonial();
@@ -63,7 +60,6 @@ slider.addEventListener(
   () => (autoScroll = setInterval(showNextTestimonial, 5000))
 );
 
-// Event Listeners for navigation buttons
 nextBtn.addEventListener("click", showNextTestimonial);
 prevBtn.addEventListener("click", showPrevTestimonial);
 
@@ -84,9 +80,7 @@ const saveTestimonial = (testimonial) => {
 };
 
 // Handle form submission for new testimonials
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
+form.addEventListener("submit", () => {
   const name = document.getElementById("name").value;
   const image = document.getElementById("image").value;
   const quote = document.getElementById("quote").value;
@@ -141,6 +135,5 @@ function toggle() {
   }
 }
 
-// Initial setup
 loadTestimonials();
 displayTestimonial();

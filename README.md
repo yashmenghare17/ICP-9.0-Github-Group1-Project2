@@ -33,6 +33,8 @@ We have various pages in this websites are as follows :
 
   This page provides an overview of the Gym Testimonials page, The page is designed to showcase client testimonials and frequently asked questions related to the gym.
 
+- **Page Link** : [Visit Page](https://icp9-group1-project3.netlify.app/pages/testimonial) .
+
 - ## Technologies Used
 
 - HTML5
