@@ -193,98 +193,74 @@
 @media screen and (max-width: 500px) 
 {
     .content-container{
-        width: 100%;
-        margin-left: 20px;
-        padding: 10px;
+        padding: 5px 15px;
+        width: 90%; 
+        margin-top: 20px;
         height: auto; 
+        margin-left: 0;
     }
 
     .trial-img{
-        width: 100%;  
-        height: auto;  
+        height: auto; 
+        width: 100%;
         margin-top: 20px;
     }
 
     .trial-text{
-        font-size: 20px;  
+        font-size: 20px; 
+    }
+
+    .form-text{
+        font-size: 18px; 
     }
 
     .form-container{
-        width: 100%;
-        margin-left: 5%;
-        padding: 15px;
+        width: 90%; 
+        margin-left: 0;
+        padding: 10px 0; 
     }
 
     .input-box{
-        height: auto;
-        width: 80%;
-        padding: 5px auto;
+        width: 80%; 
+        font-size: 14px; 
     }
-    
+
     .select-box{
-        height: auto;
-        width: 80%;
-        padding: 5px auto;
+        width: 80%; 
+        font-size: 14px; 
     }
 
     .message-box{
-        height: auto;
-        width: 80%;
-        padding: 10px auto;
+        width: 80%; 
+        font-size: 14px; 
     }
 
     .submit-btn{
-        width: 80%;
-        font-size: 14px;  
-        margin-bottom: 12px;
-        height: 40px;  
-        font-size: 16px;  
+        width: 80%; 
     }
 
-    .model-heading{
-        margin-left: 130px;
-    }
-
-    .membership-text{
-        margin-top: 20px;
-        margin-left: 0;
-        font-size: 14px;
-    }
-
-    .membership-btn{        
-        padding: 10px;        
-        font-size: 14px; 
-        margin: 10px auto; 
-        display: block;
+    .membership-img{
         width: 100%; 
-    }
-
-    .membership-container{
-        margin-left: 0; 
-        padding: 0 10px; 
+        height: auto; 
+        margin-left: 0;
     }
 
     .membership-form{
         display: flex;
-        flex-direction: column;
+        flex-direction: row; 
+        justify-content: center; 
         align-items: center; 
+        flex-wrap: wrap; 
     }
 
-    .membership-img{
-        height: auto; 
+    .membership-btn{
         width: 100%; 
         margin-left: 0;
-        margin-top: 20px;
     }
 
     .buy-btn{
-        padding: 10px;
-        font-size: 14px;
-        margin-top: 10px;
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%; 
+        margin-left: 0;
     }
 }
 
