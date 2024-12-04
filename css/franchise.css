@@ -51,12 +51,6 @@
     margin-top: 10px;
 
 }
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
 
 nav ul {
     list-style-type: none;
@@ -108,11 +102,6 @@ form textarea {
 /* Mobile device */
 @media screen and (max-width: 500px) {
     /* Mobile Header Adjustments */
-    header {
-        padding: 10px;
-        text-align: left;
-    }
-
     nav ul {
         padding: 0;
         text-align: left;
@@ -133,11 +122,11 @@ form textarea {
     .main-container {
         display: block;
         padding: 10px;
-        width: 400px;
+        width: 100%;
     }
 
     .child-container {
-        width: 100%;
+        width: 300px; 
         margin-bottom: 20px;
         padding: 10px;
         box-shadow: none;
@@ -145,12 +134,13 @@ form textarea {
     }
 
     .sub-container {
-        display: block;
+        display: flex;
+        flex-direction: column;
+       width: 100%;
     }
     .paragraph{
-        width: 400px;
-        margin-left:10px ;
-
+        width:100%;
+        margin-left: 0px;
     }
 
 
@@ -161,7 +151,7 @@ form textarea {
     }
 
     .sub-img {
-        width: 100%;
+        width: 250px;
         height: auto;
     }
 
@@ -181,7 +171,7 @@ form textarea {
     }
 
     .child-container {
-        width: 48%; 
+        width: 300px; 
         margin-bottom: 20px;
         padding: 10px;
     }
