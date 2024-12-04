@@ -38,3 +38,11 @@ We have various pages in this websites are as follows :
 - CSS3
 - JavaScript
 - Responsive design for mobile compatibility
+
+# Gym Package page
+
+## Information about gym package page
+
+- **Page Link** : [Visit Gym Package Page](https://icp9-group1-project3.netlify.app/pages/package) .
+- **Summery Of Page** : This is Gym Package Page. This page is designed to try free trial and this page contains information about gym membership.
+- **Language Used** : HTML 5,CSS,JS
